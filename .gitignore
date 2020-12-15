@@ -1,0 +1,17 @@
+
+
+## backups, copies
+**/*.7z
+**/*.bak
+
+# generated / temporary files
+**/*.cache
+**/*.log
+**/*.patch
+**/*.tmp
+**/*.TMP
+**/.build
+**/.testpublish
+**/[Bb]in
+**/[Oo]bj
+

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?> 
+<!-- 
+<!ELEMENT liste (box+)>
+<!ELEMENT box(nummer, name, standort, land, daten, beschreibung, url)>
+<!ELEMENT nummer (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT standort (#PCDATA)>
+<!ELEMENT land (#PCDATA)>
+<!ELEMENT daten (#PCDATA)>
+<!ELEMENT beschreibung (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+-->
+<liste> 
+	<box> 
+		<nummer>1</nummer>
+		<name>Bayer Business Services</name>   
+		<standort>Cologne</standort>
+		<land>, Germany</land>
+		<daten>Master Data Reference Server</daten>
+		<beschreibung>Bayer Data Center</beschreibung>
+		<url>http://www.einseins.de</url>
+	</box>
+	<box> 
+		<nummer>2</nummer>
+		<name>BCS, Bayer CropScience</name>   
+		<standort>World Wide System</standort>
+		<land>&nbsp;</land>
+		<daten>114.935 IDOCs</daten>
+		<beschreibung>PBCM528</beschreibung>
+		<url>http://www.dreidrei.de</url>
+	</box>
+	<box> 
+		<nummer>3</nummer>
+		<name>BHC, Bayer HealthCare</name>   
+		<standort>EU System</standort>
+		<land>&nbsp;</land>
+		<daten>85.619 IDOCs</daten>
+		<beschreibung>P2RM508, N2PM470, E63M400</beschreibung>
+		<url>http://www.dreidrei.de</url>
+	</box>
+	<box> 
+		<nummer>4</nummer>
+		<name>BCS, Bayer CropScience</name>   
+		<standort>NAFTA/LATAM System</standort>
+		<land>&nbsp;</land>
+		<daten>479.530 IDOCs</daten>
+		<beschreibung>U1PM110</beschreibung>
+		<url>http://www.viervier.de</url>
+	</box>
+	<box> 
+		<nummer>5</nummer>
+		<name>BMS, Bayer MaterialScience</name>   
+		<standort>NAFTA/LATAM System</standort>
+		<land>&nbsp;</land>
+		<daten>395.950 IDOCs</daten>
+		<beschreibung>U7PM499</beschreibung>
+		<url>http://www.viervier.de</url>
+	</box>
+	<box> 
+		<nummer>6</nummer>
+		<name>BHC, Bayer HealthCare</name>   
+		<standort>NAFTA/LATAM System</standort>
+		<land>&nbsp;</land>
+		<daten>93.664 IDOCs</daten>
+		<beschreibung>U8PM499</beschreibung>
+		<url>http://www.viervier.de</url>
+	</box>
+	<box> 
+		<nummer>7</nummer>
+		<name>BMS, Bayer MaterialScience</name>   
+		<standort>EU System</standort>
+		<land>&nbsp;</land>
+		<daten>152.912 IDOCs</daten>
+		<beschreibung><![CDATA[O52M511, P80M538, P85M519,<br>O51M509, KH3M600]]></beschreibung>
+		<url>http://www.zweizwei.de</url>
+	</box>
+	<box> 
+		<nummer>8</nummer>
+		<name>Bayer CropScience</name>   
+		<standort>APAC System</standort>
+		<land>&nbsp;</land>
+		<daten>3.986 IDOCs</daten>
+		<beschreibung>CSPM528</beschreibung>
+		<url>http://www.viervier.de</url>
+	</box>
+	<box> 
+		<nummer>9</nummer>
+		<name>BHC, Bayer HealthCare</name>   
+		<standort>APAC System</standort>
+		<land>&nbsp;</land>
+		<daten>37.237 IDOCs</daten>
+		<beschreibung>HCPM507</beschreibung>
+		<url>http://www.viervier.de</url>
+	</box>
+	<box> 
+		<nummer>10</nummer>
+		<name>BMS, Bayer MaterialScience</name>   
+		<standort>APAC System</standort>
+		<land>&nbsp;</land>
+		<daten>48.250 IDOCs</daten>
+		<beschreibung>BCPM501</beschreibung>
+		<url>http://www.viervier.de</url>
+	</box>
+</liste>
+
+

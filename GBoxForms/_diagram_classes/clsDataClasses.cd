@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GBoxForms.AuthorizationSet" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQQIEAKFAAiAAIAAAAEQgEgBIAFAABgkAMBgZgARA=</HashCode>
+      <FileName>Classes\AuthorizationSet.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.Filtersetting" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGQAAAACAAAAASIAAIEAAAAAEEQABIAAAAAABgQABAA=</HashCode>
+      <FileName>Classes\Filtersetting.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.MyKeyObjs" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAgEAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\KeyObj.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.myKeyObj" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAABAAABAAAAAAAAAABAAQAAAAAAEAAMA=</HashCode>
+      <FileName>Classes\KeyObj.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.myApplication" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAABgEAAAAEAIAAAAAAAIAAAAgAAAAJIAgAAA=</HashCode>
+      <FileName>Classes\myApplication.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.myUser" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JBAASAQCAAFQJQAIhgAUAAgMAjAAAPpgCKAIYKUAaAA=</HashCode>
+      <FileName>Classes\myUser.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.myUsers" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEBAAAAAQAAAAAAAAAAAAAAIAAQAAAABIAAQAAAAAA=</HashCode>
+      <FileName>Classes\myUsers.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.OBJ_TEXT" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgABQAQAgAAAYAAgAAAAQAAAAAAQEQBAAAAAA=</HashCode>
+      <FileName>Classes\OBJ_TEXT.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

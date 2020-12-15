@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBD9193E-8EB3-4146-81CD-56FC83672F55}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GBoxForms</RootNamespace>
+    <AssemblyName>GBoxForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GBoxForms.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GBoxForms.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bayer.GBOX.FrameworkClassLibrary">
+      <HintPath>..\..\..\..\..\Bayer.GBOX.FrameworkClassLibrary\Bayer.GBOX.FrameworkClassLibrary\bin\Debug\Bayer.GBOX.FrameworkClassLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Autorisation.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BHC-Communities_\index.aspx" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="GBOX-Manager\index.aspx" />
+    <Content Include="Images\bayer_cross_rgb.png" />
+    <Content Include="Images\download.ico" />
+    <Content Include="Images\download_gray.png" />
+    <Content Include="Images\lock.png" />
+    <Content Include="pMDAS-KPI\index.aspx" />
+    <Content Include="CustomerDownload.aspx" />
+    <Content Include="DownLoad.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DRS-Global-Settings\index.aspx" />
+    <Content Include="DRS-Knowledge-Base\index.aspx" />
+    <Content Include="GBoxForms.Publish.xml" />
+    <Content Include="HOTLINE\index.aspx" />
+    <Content Include="Images\684654.jpg" />
+    <Content Include="AutoClass.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ALERT.gif" />
+    <Content Include="Images\application_cascade_s_gr.gif" />
+    <Content Include="Images\application_double_s_gr.gif" />
+    <Content Include="Images\application_side_tree.png" />
+    <Content Include="Images\application_s_gr.gif" />
+    <Content Include="Images\basket_put.png" />
+    <Content Include="Images\basket_put_grey.png" />
+    <Content Include="Images\basket_remove.png" />
+    <Content Include="Images\basket_remove_grey.png" />
+    <Content Include="Images\bell.png" />
+    <Content Include="Images\bell_add.png" />
+    <Content Include="Images\bell_add_grey.png" />
+    <Content Include="Images\bell_grey.png" />
+    <Content Include="Images\BOMB.png" />
+    <Content Include="Images\book_go.png" />
+    <Content Include="Images\bottom98763.jpg" />
+    <Content Include="Images\cancel_16.gif" />
+    <Content Include="Images\cancel__16.gif" />
+    <Content Include="Images\center-top_hellcolor.jpg" />
+    <Content Include="Images\center-top_hellcolor_2.jpg" />
+    <Content Include="Images\chart_organisation.gif" />
+    <Content Include="Images\chart_organisation_gray.gif" />
+    <Content Include="Images\database-16x16.gif" />
+    <Content Include="Images\DRAFT.png" />
+    <Content Include="Images\fb.png" />
+    <Content Include="Images\gbox-16x16-1.gif" />
+    <Content Include="Images\gbox-16x16-2.gif" />
+    <Content Include="Images\gbox-16x16-3.gif" />
+    <Content Include="Images\gbox_bridge.jpg" />
+    <Content Include="Images\group.png" />
+    <Content Include="Images\group_grey.png" />
+    <Content Include="Images\group_key.png" />
+    <Content Include="Images\group_key_grey.png" />
+    <Content Include="Images\help.png" />
+    <Content Include="Images\help_grey.png" />
+    <Content Include="Images\left-top-top.jpg" />
+    <Content Include="Images\Legende.png" />
+    <Content Include="Images\linevertical.jpg" />
+    <Content Include="Images\line_FFF.jpg" />
+    <Content Include="Images\mandantory_setting.png" />
+    <Content Include="Images\marty-16x16-1.gif" />
+    <Content Include="Images\marty-16x16-2.gif" />
+    <Content Include="Images\marty-16x16-3.gif" />
+    <Content Include="Images\MDAS.gif" />
+    <Content Include="Images\nc.png" />
+    <Content Include="Images\optional.png" />
+    <Content Include="Images\page_edit.png" />
+    <Content Include="Images\page_edit_grey.png" />
+    <Content Include="Images\part-16x16.gif" />
+    <Content Include="DRS-Handbook\index.aspx" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\report_grey.png" />
+    <Content Include="Images\server_edit.png" />
+    <Content Include="Images\server_edit_grey.png" />
+    <Content Include="Images\table_add.png" />
+    <Content Include="Images\table_add_grey.png" />
+    <Content Include="Images\table_edit_gray.gif" />
+    <Content Include="Images\table_go.png" />
+    <Content Include="Images\table_go_grey.png" />
+    <Content Include="Images\textfield.png" />
+    <Content Include="Images\thumb_up.png" />
+    <Content Include="Images\thumb_up_grey.png" />
+    <Content Include="Images\user_edit.png" />
+    <Content Include="Images\user_edit_grey.png" />
+    <Content Include="KPI\index.aspx" />
+    <Content Include="MDG_Request.aspx" />
+    <Content Include="pMDAS\index.aspx" />
+    <Content Include="RequesterApproverDetails.aspx" />
+    <Content Include="sapdictionary.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Search.aspx" />
+    <Content Include="swf\mouse_invers_und_zoomen3.swf" />
+    <Content Include="UserAccess.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MDG_Request.aspx.designer.vb">
+      <DependentUpon>MDG_Request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MDG_Request.aspx.vb">
+      <DependentUpon>MDG_Request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequesterApproverDetails.aspx.designer.vb">
+      <DependentUpon>RequesterApproverDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequesterApproverDetails.aspx.vb">
+      <DependentUpon>RequesterApproverDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_globals\Authenticate.vb" />
+    <Compile Include="Autorisation.aspx.designer.vb">
+      <DependentUpon>Autorisation.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Autorisation.aspx.vb">
+      <DependentUpon>Autorisation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="_classes\Authorization.vb" />
+    <Compile Include="_classes\AuthorizationSet.vb" />
+    <Compile Include="AutoClass.aspx.designer.vb">
+      <DependentUpon>AutoClass.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="AutoClass.aspx.vb">
+      <DependentUpon>AutoClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="_classes\mySearchEngine.vb" />
+    <Compile Include="_classes\OBJ_TEXT.vb" />
+    <Compile Include="_classes\Dynamic_View_Controller_Factory.vb" />
+    <Compile Include="_classes\Dynamic_View_Controller.vb" />
+    <Compile Include="_classes\Dynamic_View_Documentator.vb" />
+    <Compile Include="_classes\Dynamic_View_Reporter.vb" />
+    <Compile Include="_classes\Dynamic_View_Requester.vb" />
+    <Compile Include="_classes\IDynamic_Form_Interfaces.vb" />
+    <Compile Include="_classes\KeyObj.vb" />
+    <Compile Include="_classes\MyDynamicForm_StaticViewController.vb" />
+    <Compile Include="_classes\myFileManager.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_classes\myOBJ.vb" />
+    <Compile Include="_classes\myTemplateFactory.vb" />
+    <Compile Include="_classes\myUsers.vb" />
+    <Compile Include="_classes\TagcloudIndexController.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cockpit.aspx.designer.vb">
+      <DependentUpon>Cockpit.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Cockpit.aspx.vb">
+      <DependentUpon>Cockpit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="_classes\Filtersetting.vb" />
+    <Compile Include="CustomerDownload.aspx.designer.vb">
+      <DependentUpon>CustomerDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDownload.aspx.vb">
+      <DependentUpon>CustomerDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownLoad.aspx.designer.vb">
+      <DependentUpon>DownLoad.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DownLoad.aspx.vb">
+      <DependentUpon>DownLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="_classes\myApplication.vb" />
+    <Compile Include="_classes\myGBoxManager.vb" />
+    <Compile Include="_classes\myRequestedUser.vb" />
+    <Compile Include="_classes\mySQLDBMANAGER.vb" />
+    <Compile Include="_classes\myUser.vb" />
+    <Compile Include="_globals\Globals.vb" />
+    <Compile Include="_classes\myTemplateControls.vb" />
+    <Compile Include="sapdictionary.aspx.designer.vb">
+      <DependentUpon>sapdictionary.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="sapdictionary.aspx.vb">
+      <DependentUpon>sapdictionary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Search.aspx.designer.vb">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.vb">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security.aspx.designer.vb">
+      <DependentUpon>Security.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Security.aspx.vb">
+      <DependentUpon>Security.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="_classes\StringValidator.vb" />
+    <Compile Include="TagCloud.aspx.designer.vb">
+      <DependentUpon>TagCloud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TagCloud.aspx.vb">
+      <DependentUpon>TagCloud.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UserAccess.aspx.designer.vb">
+      <DependentUpon>UserAccess.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UserAccess.aspx.vb">
+      <DependentUpon>UserAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="zLC.aspx.designer.vb">
+      <DependentUpon>zLC.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="zLC.aspx.vb">
+      <DependentUpon>zLC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="_morgue\RequestForm.aspx.designer.vb">
+      <DependentUpon>RequestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_morgue\RequestForm.aspx.vb">
+      <DependentUpon>RequestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BARDO\index.aspx" />
+    <Content Include="BCC-LSMW\index.aspx" />
+    <Content Include="BHC-GM\index.aspx" />
+    <Content Include="BHC-ICS\index.aspx" />
+    <Content Include="BHC-Projects\index.aspx" />
+    <Content Include="BHC-TT\index.aspx" />
+    <Content Include="BHC\index.aspx" />
+    <Content Include="Currency\index.aspx" />
+    <Content Include="Customer-and-Vendor\index.aspx" />
+    <Content Include="Customizing\index.aspx" />
+    <Content Include="DRS-Action-list\index.aspx" />
+    <Content Include="DRS-Contact-Persons\index.aspx" />
+    <Content Include="DRS-Minutes\index.aspx" />
+    <Content Include="DRS\index.aspx" />
+    <Content Include="GBox-Cockpit\index.aspx" />
+    <Content Include="Images\2010.jpg" />
+    <Content Include="Images\add.gif" />
+    <Content Include="Images\apple-touch-icon.png" />
+    <Content Include="Images\application-blue.gif" />
+    <Content Include="Images\application-graz.gif" />
+    <Content Include="Images\arrow_refresh.gif" />
+    <Content Include="Images\arrow_refresh_grey.gif" />
+    <Content Include="Images\bbs_cockpit_marker.gif" />
+    <Content Include="Images\bbs_df_marker.gif" />
+    <Content Include="Images\bbs_et_marker.gif" />
+    <Content Include="Images\bbs_intranet_marker.gif" />
+    <Content Include="Images\book_addresses.gif" />
+    <Content Include="Images\book_addresses_grey.gif" />
+    <Content Include="Images\bullet_arrow_top.gif" />
+    <Content Include="Images\bullet_star.gif" />
+    <Content Include="Images\date.gif" />
+    <Content Include="Images\date_grey.gif" />
+    <Content Include="Images\date_next.gif" />
+    <Content Include="Images\date_next_grey.gif" />
+    <Content Include="Images\date_previous.gif" />
+    <Content Include="Images\date_previous_grey.gif" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\logo_right_BBS.jpg" />
+    <Content Include="Images\bg4masterpage.jpg" />
+    <Content Include="Images\logo_right_BHC.gif" />
+    <Content Include="Images\bubble.jpg" />
+    <Content Include="Images\check.gif" />
+    <Content Include="Images\computer_add.gif" />
+    <Content Include="Images\computer_delete.gif" />
+    <Content Include="Images\computer_error.gif" />
+    <Content Include="Images\computer_go.gif" />
+    <Content Include="Cockpit.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\application_cascade_s.gif" />
+    <Content Include="Images\application_double_s.gif" />
+    <Content Include="Images\application_s.gif" />
+    <Content Include="Images\ASC.gif" />
+    <Content Include="Images\cancel.gif" />
+    <Content Include="Images\computer_s.gif" />
+    <Content Include="Images\DESC.gif" />
+    <Content Include="Images\df_logotxt.jpg" />
+    <Content Include="Images\et_logotxt.jpg" />
+    <Content Include="Images\farbverlauf_bg.jpg" />
+    <Content Include="Images\farbverlauf_centerbg.jpg" />
+    <Content Include="Images\farbverlauf_u.jpg" />
+    <Content Include="Images\feil.jpg" />
+    <Content Include="Images\file-blue.gif" />
+    <Content Include="Images\file-graz.gif" />
+    <Content Include="Images\folder-blue.gif" />
+    <Content Include="Images\folder-graz.gif" />
+    <Content Include="Images\gbox-img_1_welt.jpg" />
+    <Content Include="Images\gbox-img_2_info.jpg" />
+    <Content Include="Images\gbox-img_3_request.jpg" />
+    <Content Include="Images\gbox-img_passreset.jpg" />
+    <Content Include="Images\gbox-index20090030bildberei.jpg" />
+    <Content Include="Images\gbox-index_bg.jpg" />
+    <Content Include="Images\gbox-index_bottom_bgbot.jpg" />
+    <Content Include="Images\gbox-index_bottom_bgtop.jpg" />
+    <Content Include="Images\gbox-index_logo.jpg" />
+    <Content Include="Images\gbox-index_task_linie.jpg" />
+    <Content Include="Images\gbox-wl_logo.jpg" />
+    <Content Include="Images\gbox_headimg.jpg" />
+    <Content Include="Images\gb_logo.jpg" />
+    <Content Include="Images\cancel_grey.gif" />
+    <Content Include="Images\computer_add_grey.gif" />
+    <Content Include="Images\computer_go_grey.gif" />
+    <Content Include="Images\grey_help.gif" />
+    <Content Include="Images\grey_page_find.gif" />
+    <Content Include="Images\linie-senkrecht.gif" />
+    <Content Include="Images\linie-wagerecht.gif" />
+    <Content Include="Images\page_go_grey.gif" />
+    <Content Include="Images\page_white_put_grey.gif" />
+    <Content Include="Images\rechts_kante.gif" />
+    <Content Include="Images\rechts_rund.gif" />
+    <Content Include="Images\rechts_rund_oben.gif" />
+    <Content Include="Images\remove.gif" />
+    <Content Include="Images\report_go_2.gif" />
+    <Content Include="Images\report_go_2_grey.gif" />
+    <Content Include="Images\help.gif" />
+    <Content Include="Images\layers.gif" />
+    <Content Include="Images\page_add.gif" />
+    <Content Include="Images\page_add_s.gif" />
+    <Content Include="Images\page_delete.gif" />
+    <Content Include="Images\page_delete_s.gif" />
+    <Content Include="Images\page_find.gif" />
+    <Content Include="Images\page_gear.gif" />
+    <Content Include="Images\page_go.gif" />
+    <Content Include="Images\page_white_add.gif" />
+    <Content Include="Images\page_white_get.gif" />
+    <Content Include="Images\page_white_put.GIF" />
+    <Content Include="Images\paste_plain.gif" />
+    <Content Include="Images\server_key_s.gif" />
+    <Content Include="Images\server_s.gif" />
+    <Content Include="Images\unser_back.gif" />
+    <Content Include="Images\user.gif" />
+    <Content Include="Images\user_32.gif" />
+    <Content Include="Images\user_32_grey.gif" />
+    <Content Include="Images\user_add.gif" />
+    <Content Include="Images\user_add_grey.gif" />
+    <Content Include="Images\user_comment.gif" />
+    <Content Include="Images\user_comment_grey.gif" />
+    <Content Include="Images\user_delete.gif" />
+    <Content Include="Images\user_delete_grey.gif" />
+    <Content Include="Images\user_edit.gif" />
+    <Content Include="Images\user_edit_grey.gif" />
+    <Content Include="Images\user_go.gif" />
+    <Content Include="Images\user_go_grey.gif" />
+    <Content Include="Images\user_INFO.gif" />
+    <Content Include="Images\xml.gif" />
+    <Content Include="Images\xml_go.gif" />
+    <Content Include="Images\xml_go_grey.gif" />
+    <Content Include="Images\xml_gray.gif" />
+    <Content Include="Images\_spacer.gif" />
+    <Content Include="Images\table_edit.gif" />
+    <Content Include="Images\table_multiple_s.gif" />
+    <Content Include="Images\table_s.gif" />
+    <Content Include="Images\textfield_rename.gif" />
+    <Content Include="Images\top_nav_but_over.jpg" />
+    <Content Include="Images\transmit_s.gif" />
+    <Content Include="index.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Information\index.aspx" />
+    <Content Include="MARTY\index.aspx" />
+    <Content Include="Master-Data-Services\index.aspx" />
+    <Content Include="Material\index.aspx" />
+    <Content Include="MDAS-Product\index.aspx" />
+    <Content Include="MDR-Contact-Persons\index.aspx" />
+    <Content Include="My-GBox\index.aspx" />
+    <Content Include="Projects\index.aspx" />
+    <Content Include="QM\index.aspx" />
+    <Content Include="Request-authorization\index.aspx" />
+    <Content Include="Request\index.aspx" />
+    <Content Include="Security.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="swf\20090303_weltkarte.html" />
+    <Content Include="swf\20090512_weltkarte.swf" />
+    <Content Include="swf\AC_RunActiveContent.js" />
+    <Content Include="swf\grove_20090723.swf" />
+    <Content Include="swf\sampleXMLbbs.xml" />
+    <Content Include="System-Access\index.aspx" />
+    <Content Include="System-settings\index.aspx" />
+    <Content Include="TagCloud.aspx" />
+    <Content Include="Time-slot-management\index.aspx" />
+    <Content Include="Training\index.aspx" />
+    <Content Include="zLC.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_js\favorites.js" />
+    <Content Include="_js\hostbox.js" />
+    <Content Include="_morgue\RequestForm.aspx" />
+    <Content Include="_styles\beam.css" />
+    <Content Include="_styles\ff.css" />
+    <Content Include="_styles\ie.css" />
+    <Content Include="_styles\ie6.css" />
+    <Content Include="_styles\ie7.css" />
+    <Content Include="_styles\ie8.css" />
+    <Content Include="_styles\print.css" />
+    <Content Include="_styles\stadard.css" />
+    <Content Include="_styles\index.css" />
+    <Content Include="_styles\subbox.css" />
+    <Content Include="_styles\tcloud.css" />
+    <Content Include="_styles\uaCss.css" />
+    <None Include="_diagram_classes\clsBuissnesClasses.cd" />
+    <None Include="_diagram_classes\clsDataClasses.cd" />
+    <None Include="_diagram_classes\clsControlls.cd" />
+    <None Include="_diagram_classes\clsDynamic_View_Controler.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="cache\" />
+    <Folder Include="Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63331</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

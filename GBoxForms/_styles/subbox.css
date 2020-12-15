@@ -1,0 +1,64 @@
+﻿/* CSS Document */
+/* Dieses Dokument wurde als CSS level 3 validiert! */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-attachment: fixed;
+	background-color: #eeeeee;
+	background-image: url(../Images/gbox-index_bg.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #ffffff;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.mc-subweb-tp, .mc-subweb-bdy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #ffffff;
+}
+.mc-subweb-tp {
+height: 100px;
+padding: 0px 10px 0px 0px;
+}
+.mc-subweb-bdy {
+height: 300px;
+padding: 30px 10px 10px 48px;
+/*padding: 10px 10px 10px 203px;*/
+}
+.mc-subweb-bdy img{
+padding: 50px 0px 0px 0px;
+border: inherit;
+}
+

@@ -1,0 +1,275 @@
+﻿/* CSS Document */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+/* weitere allgem. inhalte */
+
+.mc-bd-toptitle{
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+font-weight:normal;
+color:#333333;
+padding:5px 0px 30px 0px;
+}
+.mc-bd-simpletitle{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+color:#333333;
+padding:5px 0px 5px 0px;
+}
+.mc-bd-allgtitle{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+color:#333333;
+padding:5px 0px 5px 0px;
+}
+.mc-bd-toptitle{
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+font-weight:normal;
+color:#333333;
+padding:5px 0px 30px 0px;
+}
+.mc-bd-simpletitle{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+color:#333333;
+padding:5px 0px 5px 0px;
+}
+.mc-bd-allgtitle{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+color:#333333;
+padding:5px 0px 5px 0px;
+}
+.mc-bd-text{ 
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#333333;
+}
+.mc-bd-text a {
+font-size:12px;
+text-decoration:underline;
+padding: 2px 2px 2px 2px;
+color:#333399;
+}
+.mc-bd-text a:visited {
+font-size:12px;
+text-decoration:underline;
+}
+.mc-bd-text a:active  {
+text-decoration:underline;
+color:#333399;
+}
+.mc-bd-text a:hover {
+text-decoration:underline;
+}
+
+
+/* fest definierte inhalte */
+
+.mc-frm-username{
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+color:#333333;
+padding:5px 0px 30px 0px;
+}
+.mc-frm-tblUserInfo {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+border: none;
+border-color:#FFFFFF;
+}
+table.mc-frm-tblUserInfo {
+margin: 5px 0 20px 0;
+padding: 0 0 0 0;
+}
+table.mc-frm-gvgrdRoles {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+border: 1px #666666 solid;
+}
+.mc-frm-gvgrdRoles td {
+padding: 2px 2px 2px 2px;
+border: 1px #666666 solid;
+}
+.mc-frm-gvgrdRoles th {
+padding: 2px 2px 2px 2px;
+border: 1px #666666 solid;
+}
+.mc-frm-gvgrdRoles th{
+background-color:#eeeeee;
+}
+.mc-frm-gvgrdRoles td {
+background-color:#ffffff;
+}
+
+
+.mc-frm-tablepart {
+border:none;
+}
+.mc-frm-tablepartLeft {
+background-image: url('bilder/linie-senkrecht.gif');
+background-position: right;
+background-repeat: repeat-y;
+vertical-align: top;
+height: 500px;
+width: 300px;
+}
+td.mc-frm-tablepartLeft {
+vertical-align:top;
+padding: 10px 0 0 0;
+}
+.mc-frm-tablePartBlue {
+background-color: #f3f7fb;
+vertical-align:top
+}
+td.mc-frm-tablePartBlue {
+vertical-align:top;
+padding: 10px 0 0 0;
+}
+td.mc-frm-tablePartBlue .mc-frm-lblUser{
+}
+
+.mc-frm-lblUser {
+font-size:14px;
+color:#333333;
+margin: 0px 0px 0px 15px;
+}
+.mc-frm-txtUserToAdd {
+border: 1px #666666 solid;
+margin: 0px 15px 0px 15px;
+}
+.mc-frm-lstUsersToCheck {
+border: 1px #666666 solid;
+margin: 25px 15px 0px 15px;
+}
+.mc-frm-cmdRomoveSelected  {
+padding: 0px 0px 0px 0px;
+}
+
+.mc-frm-cmdAddUser  {
+padding: 0px 0px 0px 0px;
+}
+
+.mc-frm-lblValid {
+margin: 15px 15px 15px 8px;
+float:left;
+}
+.mc-frm-lblValidtxt{
+font-size:12px;
+color:#333333;
+}
+
+table .mc-frm-CalendarTo {
+font-size:12px;
+color:#333333;
+}
+
+table .mc-frm-CalendarFrom {
+font-size:12px;
+color:#333333;
+}
+table .mc-frm-CalendarTo td {
+font-size:14px;
+color:#333333;
+padding: 2px 2px 2px 2px;
+}
+table .mc-frm-CalendarFrom td {
+font-size:14px;
+color:#333333;
+padding: 2px 2px 2px 2px;
+}
+table .mc-frm-CalendarTo td a:visited {
+font-size:12px;
+text-decoration:none;
+padding: 2px 2px 2px 2px;
+}
+table .mc-frm-CalendarFrom td a:visited {
+font-size:12px;
+text-decoration:none;
+padding: 2px 2px 2px 2px;
+}
+table .mc-frm-CalendarTo td a {
+font-size:12px;
+text-decoration:none;
+padding: 2px 2px 2px 2px;
+}
+table .mc-frm-CalendarFrom td a {
+font-size:12px;
+text-decoration:none;
+padding: 2px 2px 2px 2px;
+}
+table .mc-frm-CalendarTo td a:active  {
+font-size:12px;
+text-decoration:underline;
+padding: 2px 2px 2px 2px;
+}
+
+table .mc-frm-CalendarFrom td a:active  {
+font-size:12px;
+text-decoration:underline;
+padding: 2px 2px 2px 2px;
+}
+
+table .mc-frm-CalendarTo td a:hover  {
+font-size:12px;
+text-decoration:underline;
+padding: 2px 2px 2px 2px;
+}
+
+table .mc-frm-CalendarFrom td a:hover  {
+font-size:12px;
+text-decoration:underline;
+padding: 2px 2px 2px 2px;
+}
+
+.mc-frm-cmdShowRequest{
+margin: 15px 0px 15px 0px;
+}
+
+
+
+/* CSS Document */
+.mc-frm-cmdChooseApplication, .mc-frm-cmdComplete, .mc-frm-cmdBack, .mc-frm-cmdSubmit {
+margin: 15px 15px 0px 0px;
+}
+.imgstyle1 {
+	margin-top: 2px;
+}
+.style1, .style3, .style4, .style4
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;    
+}
+.style1
+{
+background-image: url('bilder/linie-senkrecht.gif');
+background-position: right;
+background-repeat: repeat-y;
+height: 50px;
+width: 163px;
+}
+.style3
+{
+height: 48px;
+}
+.style4
+{
+background-image: url('bilder/linie-senkrecht.gif');
+background-position: right;
+background-repeat: repeat-y;
+height: 48px;
+width: 163px;
+}
+    .style5
+    {
+        width: 425px;
+    }

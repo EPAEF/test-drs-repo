@@ -1,0 +1,235 @@
+/* CSS Document */
+html,body {
+height: 100%;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: #333333;
+background-color:#eeeeee;
+background-image:url(/Images/gbox-index_bg.jpg);
+background-position:top left;
+background-repeat:repeat-y;
+margin:0 auto;
+padding:0;
+}
+#base{
+width:984px;
+height: 100%;
+margin:0;
+padding:0;
+}
+
+/* Top */
+#mc_top{
+width:100%;
+height: 88px;
+}
+
+/* Center */
+#mc_center{
+width:100%;
+height: 400px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+background-color:#333333;
+}
+
+/********** Bottom **********/
+#mc_bottom{
+font-family:Arial, Helvetica, sans-serif;
+width:100%;
+height: 225px;
+margin:0px 0px 15px 0px;
+padding:0px 0px 0px 0px;
+}
+#mc_bottom h1 { 
+color:#FFFFFF;
+font-size:14px;
+font-weight:bold;
+text-align:left;
+margin:0 0 0 0;
+padding:5px 0px 5px 9px;
+}
+
+#mc_bottom img { 
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 8px;
+}
+.mc_bottom_one{
+margin:10px 2px 10px 0px;
+padding:0px 0px 0px 0px;
+width:244px;
+float:left;
+background-color:#666666;
+position:static;
+}
+.mc_bottom_one_oben{
+background-image:url(/Images/gbox-index_bottom_bgtop.jpg);
+background-position:top;
+background-repeat:no-repeat;
+padding:0px 0px 0px 0px;
+position:static;
+}
+/* FF
+.mc_bottom_one_unten{
+background-image:url(/Images/gbox-index_bottom_bgbot.jpg);
+background-position:bottom;
+background-repeat:no-repeat;
+padding:2px 8px 4px 9px;
+height: 45px;
+position:static;
+}
+*/
+/* IE*/
+.mc_bottom_one_unten{
+background-image:url(/Images/gbox-index_bottom_bgbot.jpg);
+background-position:bottom;
+background-repeat:no-repeat;
+padding:2px 8px 4px 9px;
+height: 50px;
+position:static;
+}
+
+.mc_bottom_one_unten ul{
+list-style-type: none;
+list-style: none;
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+}
+.mc_bottom_one_unten li { 
+color:#FFFFFF;
+font-size:10px;
+background-image: url(/Images/feil.jpg);
+background-repeat: no-repeat;
+background-position:2px 8px;
+padding: 0 0 1px 20px;
+margin: 0 0 0 0;
+}
+
+.mc_bottom_one_unten li a{ 
+color:#FFFFFF;
+text-decoration:none;
+}
+.mc_bottom_one_unten li a:link, .mc_bottom_one_unten li a:visited{ 
+color:#FFFFFF;
+text-decoration:none;
+}
+.mc_bottom_one_unten li a:hover, .mc_bottom_one_unten li a:active{ 
+color:#FFFFFF;
+text-decoration:underline;
+}
+
+.mc_bottom_double{
+margin:10px 0px 10px 0px;
+padding:0 0 0 0;
+width:246px;
+height: 140px;
+float:left;
+}
+/* FF 
+.mc_bottom_double_oben, .mc_bottom_double_unten{
+margin:0 0 5px 0;
+padding:0 0 0 0;
+height:68px;
+width: 100%;
+}
+*/
+
+/* IE */
+/* IE6 and below */
+
+.mc_bottom_double_oben, .mc_bottom_double_unten
+{
+margin:0 0 9px 0; 
+padding:0 0 0 0;
+height:68px;
+width: 100%;
+}
+
+* html .mc_bottom_double_oben, * html .mc_bottom_double_unten
+{
+margin:0 0 2px 0; 
+padding:0 0 0 0;
+height:68px;
+width: 100%;
+}
+
+.mc_bottom_double_oben{
+background-image:url(/Images/rechts_rund_oben.gif);
+background-position:top;
+background-repeat:no-repeat;
+}
+.mc_bottom_double_unten{
+background-image:url(/Images/gbox-index_bottom_bgtop.jpg);
+background-position:top;
+background-repeat:no-repeat;
+}
+
+.mc_bottom_double_oben ul, .mc_bottom_double_unten ul{
+list-style-type: none;
+list-style: none;
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+}
+.mc_bottom_double_oben li, .mc_bottom_double_unten li { 
+color:#FFFFFF;
+font-size:10px;
+background-image: url(/Images/feil.jpg);
+background-repeat: no-repeat;
+background-position:2px 8px;
+padding: 0 0 0 20px;
+margin: 0 0 0 9px;
+}
+.mc_bottom_double_oben li a, .mc_bottom_double_unten li a{ 
+color:#FFFFFF;
+text-decoration:none;
+}
+.mc_bottom_double_oben li a:link, .mc_bottom_double_oben li a:visited, .mc_bottom_double_unten li a:link, .mc_bottom_double_unten li a:visited{ 
+color:#FFFFFF;
+text-decoration:none;
+}
+.mc_bottom_double_oben li a:hover, .mc_bottom_double_oben li a:active, .mc_bottom_double_unten li a:hover, .mc_bottom_double_unten li a:active{ 
+color:#FFFFFF;
+text-decoration:underline;
+}
+
+.mc_bottom_double_oben div{
+background-image:url(/Images/rechts_kante.gif);
+background-repeat:no-repeat;
+background-position:bottom;
+}
+.mc_bottom_double_unten div{
+background-image:url(/Images/rechts_rund.gif);
+background-repeat:no-repeat;
+background-position:bottom;
+}
+
+/********** Task **********/
+#mc_task{
+width:100%;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+text-align:right;
+}
+#mc_task_line{
+width:984px;
+height: 11px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+#mc_task_txt, #mc_task_txt a{
+width:984px;
+margin:0px 0px 0px 0px;
+padding:0px 0px 5px 0px;
+color:#666666;
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+font-style:normal;
+text-align:right;
+}
+#mc_task_txt a:link { color:#666666; text-decoration:none; }
+#mc_task_txt a:visited { color:#666666; text-decoration:none; }
+#mc_task_txt a:focus { color:#666666; text-decoration:underline; }
+#mc_task_txt a:hover { color:#666666; text-decoration:underline; }
+#mc_task_txt a:active { color:#666666; text-decoration:underline; }
+

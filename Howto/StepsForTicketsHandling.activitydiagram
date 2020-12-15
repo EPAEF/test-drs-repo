@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4395ecf2-0933-43d0-8952-fa01a0e8f13b" name="Steps for Ticket Handling" linkedPackageId="7d4fc7f7-56bf-487c-bfec-281136b1b78c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <description>Perigrine Application</description>
+  <ownedCommentsInternal>
+    <comment Id="d55ca2c2-8f92-47be-8438-e223ba91fb00">
+      <elementDefinition Id="dcec90a0-7877-404d-bbde-974d030e8b71" />
+      <body>Is a Codechange neccesary ?</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="35e5df2b-9bd3-48d3-a68d-c69d12d94603" LastKnownName="Codechange Neccesary" />
+      </annotatedElements>
+    </comment>
+    <comment Id="c5530db1-2a9e-468b-a177-6e823e6ab740">
+      <elementDefinition Id="a48aa1a9-1b20-4f3d-8a7c-e1fc092f12f0" />
+      <body>If there is no workbranch present for this workitem then 
+Branch from D strand to 
+work item strand</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="af37b51e-92b9-478a-84aa-903940e53ad9" LastKnownName="branch workstrand " />
+      </annotatedElements>
+    </comment>
+    <comment Id="1fcb1675-71a1-4e7f-976c-b9c73a207e08">
+      <elementDefinition Id="aad25a68-df71-44ac-bdaa-fd86e0826523" />
+      <body>Open Work Item with: 
+-all Related ticket numbers
+- Link SME Ticket(s) to Workitem and vice verser
+-definition of done for this issue 
+Work item is defined for the branch as transport protocol</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="d1cac8fa-a7bd-4644-ae1f-90543f47f1d0" LastKnownName="open work item or add to existing" />
+      </annotatedElements>
+    </comment>
+    <comment Id="34ce0391-71a5-4b52-8583-1f37d4d0290c">
+      <elementDefinition Id="16355711-5b08-483e-a650-013637ca9655" />
+      <body>HPSM Section</body>
+    </comment>
+    <comment Id="259dbcee-cd6b-4ddd-8035-e88191ea6c05">
+      <elementDefinition Id="f818746a-ab0d-4b11-8c13-daf42d62469e" />
+      <body>SMP Section</body>
+    </comment>
+    <comment Id="5cacf332-077c-433f-83e4-e4c84252370f">
+      <elementDefinition Id="959f856a-30ee-4001-9a71-cda6846d7d16" />
+      <body>TFS / Visual Studio Section</body>
+    </comment>
+    <comment Id="d87f559a-0a2e-4af2-b74e-41f176d41269">
+      <elementDefinition Id="32a8396f-f22d-4fb5-8d0f-6f9b1d1d98e2" />
+      <body>Add CR Ref with  comment in the code.  Follow naming convention for variables. Prepare Unit test case document, execute testcases. </body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="cf8bbcb5-d7d1-42ba-88fa-40e1c9c289db" LastKnownName="implement" />
+      </annotatedElements>
+    </comment>
+    <comment Id="ea5414a4-f897-4ff2-b4e6-46b5382f0fd9">
+      <elementDefinition Id="d15e9a76-ce0b-465a-9cdf-5c7bc76b3e09" />
+      <body>Merge the changes to D-system</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="a46bf762-ca26-4ed8-9203-ba77b9285aef" LastKnownName="Merge to D system" />
+      </annotatedElements>
+    </comment>
+    <comment Id="0d513308-481c-4694-99c0-d6b52165303d">
+      <elementDefinition Id="621637f3-d40c-443b-bf87-a6570fd9c180" />
+      <body>Merge the changes to Q-system
+Attach all changesets to Workitem (last chance)</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="1b20cdc7-f3a7-495a-bf6f-0927f660f220" LastKnownName="merge to Q strand" />
+      </annotatedElements>
+    </comment>
+    <comment Id="ffb9befd-8238-46e6-962c-810237e88e05">
+      <elementDefinition Id="48733e55-208a-441e-b1bf-42202d19c820" />
+      <body>Check for Coding guidlines / QA GATE</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="d26a2756-2895-4b2f-9070-620d662bddaa" LastKnownName="Whitebox Test" />
+      </annotatedElements>
+    </comment>
+    <comment Id="375bcd63-5e1b-4433-b264-1c1312cb12a7">
+      <elementDefinition Id="29966861-af03-4fa4-9080-d4b323f60dd7" />
+      <body>Analyse Problems 
+and describe To Do's in Analysis/Research section of ticket.</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="d46c8d3b-5d91-4f34-8019-f7a2ce3563c4" LastKnownName="Analyse" />
+      </annotatedElements>
+    </comment>
+    <comment Id="576cccb2-0963-49c8-a3b7-a112cbf4b666">
+      <elementDefinition Id="14685f23-c563-4ee7-aeb9-61197dbf02fd" />
+      <body>Link ZHHR Number with HPSM Number.
+Describe Details with your understandig of request.</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="c43ebf6f-dce7-4367-87b3-3909b8a4ca89" LastKnownName="Create ZHHR" />
+      </annotatedElements>
+    </comment>
+    <comment Id="8e6a2cc3-60b5-425e-883a-ca6cb72dd431">
+      <elementDefinition Id="78f07a41-6c83-4f85-8ebd-84e1c1e4e237" />
+      <body>Perform testcases defined above
+Add Changesets to workitem</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="207135e4-3d7c-42ee-81b0-b729d9e1b594" LastKnownName="D-Box testing" />
+      </annotatedElements>
+    </comment>
+    <comment Id="e4372f0a-d01a-47d8-bf85-e4f3b522b18f">
+      <elementDefinition Id="a0b2e1c3-c439-47fb-b70b-452e1a5a3c16" />
+      <body>Verify the Unit test cases / Perform All Test plans during the testing on D-system attach them to Workitem as protocol
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="8b3fcf11-83d3-4f9e-92d1-80d0def78d2c" LastKnownName="publish to D system" />
+      </annotatedElements>
+    </comment>
+    <comment Id="cda0f657-84e9-4f72-b6ad-7787232fa411">
+      <elementDefinition Id="60ae313d-0755-40e6-b134-0aea2600043e" />
+      <body>GIM QA Gate II
+   - last hands on for supplier
+   - check of workitem
+   - check of Merge Errors
+   - check of documentation complete  
+   - definition of done fulfilled
+   - Send Email to merge into P strand</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="5305b32f-b026-4d59-a6b9-37d8736079c5" LastKnownName="PRD implementation" />
+      </annotatedElements>
+    </comment>
+    <comment Id="3ba7114b-8123-4e5f-a139-b3c9fef0c3d1">
+      <elementDefinition Id="7e1f1783-a160-4ab6-babb-4d6f05885ec1" />
+      <body>eg check all links CRT &gt; TFS</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="6acc5491-6fd9-4857-8ced-0f4c0f52c608" LastKnownName="Business Approval" />
+      </annotatedElements>
+    </comment>
+    <comment Id="93dc1d89-089a-4d65-a8af-f3ef905e681d">
+      <elementDefinition Id="c2d6b3ef-a947-4b53-b86f-785b183525ba" />
+      <body>Email will send to GIM QA Gate II from QBOX tester</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="9bc21b0c-0cd0-48d2-b3f7-a8c1e035878d" LastKnownName="ready for PRD impl." />
+      </annotatedElements>
+    </comment>
+    <comment Id="548ab4d3-d915-4c96-b5b5-efafe7e7bee1">
+      <elementDefinition Id="22650d6a-91bd-45ee-a77e-190d924cb3ab" />
+      <body>Email will send to GIM QA Gate II</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="b02cdc7f-a88e-4f0c-9305-343121e8104f" LastKnownName="merge to P strand" />
+      </annotatedElements>
+    </comment>
+    <comment Id="c9382630-94ff-4dfb-a7ae-bfb297e8865a">
+      <elementDefinition Id="61e011de-be2a-453b-b79f-616ba609d563" />
+      <body>PRD testing successfully done and then close work item</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="8a5cd693-8f96-456b-892c-0d756fc06ce1" LastKnownName="Close Workitem" />
+      </annotatedElements>
+    </comment>
+    <comment Id="6bd00240-bfaa-4c8a-8c67-bc41a4d7f823">
+      <elementDefinition Id="3c5f3da8-c68b-4267-83b3-e679b310042f" />
+      <body>Business tester will perform this activity</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="682bd280-98bd-4023-996d-d4718d2428ab" LastKnownName="Q-Box  testing" />
+      </annotatedElements>
+    </comment>
+    <comment Id="44494591-fb11-43ac-a4e3-4bdfeb902058">
+      <elementDefinition Id="7dbbc83d-5713-4c39-b0fe-ba186ad565a0" />
+      <body>Close the HPSM tickets if not done</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="09c26ba6-eee0-42c6-8049-d6d26f5e7c8e" LastKnownName="Complete" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="359f3cf7-726b-4b8e-8548-060d77875c5e" name="Steps for Ticket Handling" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="6d346b94-6d54-4b2c-9b49-8e4a10665209" />
+        <nodes>
+          <callOperationAction Id="88c615af-3c82-4ae5-b582-510ef7951a8a" name="Incoming Ticket" isLeaf="false">
+            <description>Accept Ticket</description>
+            <elementDefinition Id="574e4e70-387c-47d0-9739-ee42ef5e073d" />
+            <flowNodeTargets>
+              <controlFlow Id="321de8fa-0350-47ac-9df1-19cd25a66020" isLeaf="false">
+                <decisionNodeMoniker Id="35e5df2b-9bd3-48d3-a68d-c69d12d94603" LastKnownName="Codechange Neccesary" />
+                <elementDefinition Id="d0592fff-357a-4c5c-ba6b-29aa524e87ed" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callOperationAction>
+          <decisionNode Id="35e5df2b-9bd3-48d3-a68d-c69d12d94603" name="Codechange Neccesary" isLeaf="false">
+            <description>Is a Codechenge neccesary ?</description>
+            <elementDefinition Id="5ad3166e-9654-42dd-913d-0f7b23c6cef7" />
+            <flowNodeTargets>
+              <controlFlow Id="8bec49f2-5e5e-4c14-901c-c65b571e7666" guard="No" isLeaf="false">
+                <opaqueActionMoniker Id="a9685bca-07e9-4380-b965-26c2dd061004" LastKnownName="Reassign Ticket" />
+                <elementDefinition Id="7d357b8d-5ec3-4745-b344-99bd4f2a6f8b" />
+              </controlFlow>
+              <controlFlow Id="749e1f22-6ef3-4ef5-94d2-74374a8ec58c" isLeaf="false">
+                <opaqueActionMoniker Id="478ee7b7-4780-4709-a0bd-f1cb4dbb1a90" LastKnownName="Reassign Ticket" />
+                <elementDefinition Id="373737ba-10c8-4057-89c9-fb80a1068f98" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="a9685bca-07e9-4380-b965-26c2dd061004" name="Reassign Ticket" isLeaf="false">
+            <elementDefinition Id="9ede5e7c-4cdf-4e83-9382-350722e8ae53" />
+            <flowNodeTargets>
+              <controlFlow Id="981b1853-a68b-4cec-9c58-5d3a7fcb84c3" isLeaf="false">
+                <opaqueActionMoniker Id="ed657c39-6a44-44e1-bf09-e4d50a6c17e9" LastKnownName="Customizing" />
+                <elementDefinition Id="38c799f8-67ac-42de-93ee-a493ddc80db7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d46c8d3b-5d91-4f34-8019-f7a2ce3563c4" name="Analyse" isLeaf="false">
+            <elementDefinition Id="9a9b0da1-019b-4e71-8104-d54ea29e353b" />
+            <flowNodeTargets>
+              <controlFlow Id="e653361b-97c5-4d70-bdef-8e415c504ee5" isLeaf="false">
+                <opaqueActionMoniker Id="c43ebf6f-dce7-4367-87b3-3909b8a4ca89" LastKnownName="Create ZHHR" />
+                <elementDefinition Id="69ca0457-1cbc-4476-93ed-e047578f3962" />
+              </controlFlow>
+              <controlFlow Id="a13f22a8-77df-4fcf-8fc9-9ca6789953e4" isLeaf="false">
+                <opaqueActionMoniker Id="a9685bca-07e9-4380-b965-26c2dd061004" LastKnownName="Reassign Ticket" />
+                <elementDefinition Id="48d8f5d2-1915-4cbf-a0fc-445478010817" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b4c4a8da-4f12-49d0-8c6d-13dc30eaf8d9" name="Work In Progress" isLeaf="false">
+            <elementDefinition Id="f33f3863-7400-4df3-9cc8-1f8d4b70d78e" />
+            <flowNodeTargets>
+              <controlFlow Id="b1ba03fe-c6f6-4b9c-8621-15d53e4668d1" isLeaf="false">
+                <opaqueActionMoniker Id="d46c8d3b-5d91-4f34-8019-f7a2ce3563c4" LastKnownName="Analyse" />
+                <elementDefinition Id="2a977514-ad99-410f-9be0-4ec0ae30ae12" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c43ebf6f-dce7-4367-87b3-3909b8a4ca89" name="Create ZHHR" isLeaf="false">
+            <elementDefinition Id="12410ba1-8ddb-4760-82e7-6f7e7ac3de19" />
+            <flowNodeTargets>
+              <controlFlow Id="253ad7ee-5bf1-4d86-b03c-844a27d6aec1" isLeaf="false">
+                <opaqueActionMoniker Id="d3a5b600-90fa-40d8-af83-308d904e0d5c" LastKnownName="Forward to SME" />
+                <elementDefinition Id="1c84eb2d-c3ef-4162-b5d4-bd049756f814" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6acc5491-6fd9-4857-8ced-0f4c0f52c608" name="Business Approval" isLeaf="false">
+            <elementDefinition Id="0128c18e-5aab-4d4d-8c5d-c8a8c33cde70" />
+            <flowNodeTargets>
+              <controlFlow Id="3349947d-6c74-4fa9-bc4f-6efccbc5b6e5" isLeaf="false">
+                <opaqueActionMoniker Id="63f38d34-c925-4ce2-a960-900d3518251e" LastKnownName="In realization" />
+                <elementDefinition Id="cb08ca07-2567-465a-b460-adc0bdf6e2ae" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ed657c39-6a44-44e1-bf09-e4d50a6c17e9" name="Customizing" isLeaf="false">
+            <elementDefinition Id="ba324757-2f53-4799-bce2-e139de4f0466" />
+            <flowNodeTargets>
+              <controlFlow Id="520ebecf-23f8-425b-b3a4-1c9f43ccfade" isLeaf="false">
+                <activityFinalNodeMoniker Id="dbf1dd16-4afb-437c-a0e7-ca275c6cce77" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="3343780d-d120-4938-957f-0b750bff6292" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a46bf762-ca26-4ed8-9203-ba77b9285aef" name="Merge to D system" isLeaf="false">
+            <elementDefinition Id="3ba38d91-c19d-41eb-9689-03f2f38e9cc2" />
+            <flowNodeTargets>
+              <controlFlow Id="01338b9e-6ecd-48b2-b09b-8212d338c44c" isLeaf="false">
+                <opaqueActionMoniker Id="8b3fcf11-83d3-4f9e-92d1-80d0def78d2c" LastKnownName="publish to D system" />
+                <elementDefinition Id="3b12472f-9011-4132-81e4-b92eaea45d69" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d26a2756-2895-4b2f-9070-620d662bddaa" name="Whitebox Test" isLeaf="false">
+            <elementDefinition Id="b2276485-4c67-4da3-9cc5-fbb3c4605ff2" />
+            <flowNodeTargets>
+              <controlFlow Id="e3235564-fa0c-4d84-9e85-44b84a30b64b" isLeaf="false">
+                <opaqueActionMoniker Id="1fc985b0-533a-4a4b-a61a-56936e6f06fa" LastKnownName="Publish to QBOX" />
+                <elementDefinition Id="67e9fd32-e1dc-42ca-b1fc-6de1a3a64450" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8b3fcf11-83d3-4f9e-92d1-80d0def78d2c" name="publish to D system" isLeaf="false">
+            <elementDefinition Id="6bff175f-ed98-47be-8cea-c57e4306a20c" />
+            <flowNodeTargets>
+              <controlFlow Id="512fccc9-9f0e-46f1-9d7e-dbe6ecab7e28" isLeaf="false">
+                <opaqueActionMoniker Id="124abf42-684f-431c-a016-a4b2f458526c" LastKnownName="Implementation Finish" />
+                <elementDefinition Id="c51b35ac-c914-44f0-bb86-c1511e35f2d7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1fc985b0-533a-4a4b-a61a-56936e6f06fa" name="Publish to QBOX" isLeaf="false">
+            <elementDefinition Id="2065f8f5-7fa2-4911-9747-e14aab58a0a5" />
+            <flowNodeTargets>
+              <controlFlow Id="23a7a065-5ee8-4f38-9692-0bdc262dbc90" isLeaf="false">
+                <opaqueActionMoniker Id="2791fd2a-f2a1-4a5d-8c7e-b31cb21682f8" LastKnownName="ready for Q-Box impl." />
+                <elementDefinition Id="7caa0c31-5743-4a94-8a4d-d6eb998c372c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cb8b54a5-bf38-4856-ab18-3fdb86e3db17" name="SME Survey" isLeaf="false">
+            <elementDefinition Id="c6f7bf54-b797-4449-8f4f-ed4395e1ccdb" />
+            <flowNodeTargets>
+              <controlFlow Id="d2913c6a-4d31-4536-8bdf-fb3d2be6d2a4" isLeaf="false">
+                <opaqueActionMoniker Id="08f69296-35ff-45d6-89cb-77d976daac55" LastKnownName="SME Release Planning" />
+                <elementDefinition Id="1e817a83-e02b-4cf7-aefb-e223925533c8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1b20cdc7-f3a7-495a-bf6f-0927f660f220" name="merge to Q strand" isLeaf="false">
+            <elementDefinition Id="40647324-638a-4d5c-9d59-6b806bb7d40c" />
+            <flowNodeTargets>
+              <controlFlow Id="f8e5e88e-b170-438b-8b3d-3fa625baef4d" isLeaf="false">
+                <opaqueActionMoniker Id="d26a2756-2895-4b2f-9070-620d662bddaa" LastKnownName="Whitebox Test" />
+                <elementDefinition Id="46f89b7d-35e2-4e39-90f4-eec9c607f5e0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cf8bbcb5-d7d1-42ba-88fa-40e1c9c289db" name="implement" isLeaf="false">
+            <elementDefinition Id="da6c102e-346f-4a8e-b8cd-65e0f8378a06" />
+            <flowNodeTargets>
+              <controlFlow Id="ac21be0d-111e-4f8c-bbce-bfaa767f0f23" isLeaf="false">
+                <opaqueActionMoniker Id="a46bf762-ca26-4ed8-9203-ba77b9285aef" LastKnownName="Merge to D system" />
+                <elementDefinition Id="78217355-7583-4fd4-bf70-2367339a8138" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="af37b51e-92b9-478a-84aa-903940e53ad9" name="branch workstrand " isLeaf="false">
+            <elementDefinition Id="a3f6d9e6-d577-4a6f-9e5c-0c5bc84d7fd8" />
+            <flowNodeTargets>
+              <controlFlow Id="141d0e6a-a9ba-499d-87b3-64e6f8a03f59" isLeaf="false">
+                <opaqueActionMoniker Id="cf8bbcb5-d7d1-42ba-88fa-40e1c9c289db" LastKnownName="implement" />
+                <elementDefinition Id="138d0084-bbd2-47e9-95e2-b5ac574373ff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d1cac8fa-a7bd-4644-ae1f-90543f47f1d0" name="open work item or add to existing" isLeaf="false">
+            <elementDefinition Id="35f43112-44c2-4d33-b56f-b54788081e83" />
+            <flowNodeTargets>
+              <controlFlow Id="b5b7de12-7764-4894-95e8-a66d64a766cd" isLeaf="false">
+                <opaqueActionMoniker Id="6acc5491-6fd9-4857-8ced-0f4c0f52c608" LastKnownName="Business Approval" />
+                <elementDefinition Id="5c29a655-1431-4511-85ba-82cd1184fc49" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="cfc57413-3d9e-4fab-b43b-9c84b795ff6e" name="Join1" isLeaf="false">
+            <elementDefinition Id="83f7ad84-e70c-432b-88d7-a3da4363fb72" />
+            <flowNodeTargets>
+              <controlFlow Id="52010d8b-733d-45d3-aef3-27daa58450e4" isLeaf="false">
+                <opaqueActionMoniker Id="d1cac8fa-a7bd-4644-ae1f-90543f47f1d0" LastKnownName="open work item or add to existing" />
+                <elementDefinition Id="0ad65c85-e8a5-47f9-8090-ef429eeed9f3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="b02cdc7f-a88e-4f0c-9305-343121e8104f" name="merge to P strand" isLeaf="false">
+            <elementDefinition Id="1084501a-57bb-4dca-b486-7c3b84aa1ef8" />
+            <flowNodeTargets>
+              <controlFlow Id="322d255e-b2b9-4810-90e2-93e5e46fab27" isLeaf="false">
+                <opaqueActionMoniker Id="dfad9a64-c5ef-4a00-b10b-11cb83398d3a" LastKnownName="PRD implementation Finished" />
+                <elementDefinition Id="1af10263-2f34-4002-9958-3e70607842ee" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="09c26ba6-eee0-42c6-8049-d6d26f5e7c8e" name="Complete" isLeaf="false">
+            <elementDefinition Id="7c0d29a4-bd9e-4ccf-aeee-d47537b57921" />
+            <flowNodeTargets>
+              <controlFlow Id="18e4524e-7c67-4bf3-91ad-60aaf29fde33" isLeaf="false">
+                <activityFinalNodeMoniker Id="dbf1dd16-4afb-437c-a0e7-ca275c6cce77" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b184c277-bc3f-466d-b722-5261a6fee698" />
+              </controlFlow>
+              <controlFlow Id="620ee0d5-eb99-4516-a367-9fc3a95a5d53" isLeaf="false">
+                <opaqueActionMoniker Id="8a5cd693-8f96-456b-892c-0d756fc06ce1" LastKnownName="Close Workitem" />
+                <elementDefinition Id="5fc6fc04-3dc3-43ef-a563-817ac878c741" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="39370751-ad34-4e31-9542-1ceaa5a953b8" name="Ready for confirmation" isLeaf="false">
+            <elementDefinition Id="7860e1bc-4ce4-4e6c-ad85-1286b9d51f06" />
+            <flowNodeTargets>
+              <controlFlow Id="62b8bd93-3090-47c6-beb8-94c510e277a9" isLeaf="false">
+                <opaqueActionMoniker Id="09c26ba6-eee0-42c6-8049-d6d26f5e7c8e" LastKnownName="Complete" />
+                <elementDefinition Id="650a02a3-5e6b-44a6-a340-536989e5b2cf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a4c347b6-612a-4f43-bac2-c866d17bc37d" name="PRD Testing" isLeaf="false">
+            <elementDefinition Id="7ebadd96-08fa-4e34-9553-8fbb07bad8ee" />
+            <flowNodeTargets>
+              <controlFlow Id="8dac047b-f456-4aed-8a2b-bdbc8c7f3277" isLeaf="false">
+                <opaqueActionMoniker Id="39370751-ad34-4e31-9542-1ceaa5a953b8" LastKnownName="Ready for confirmation" />
+                <elementDefinition Id="73e03393-118b-467a-a38c-3310ff8a1179" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5305b32f-b026-4d59-a6b9-37d8736079c5" name="PRD implementation" isLeaf="false">
+            <elementDefinition Id="c92d912b-b324-4813-b823-48690eb989d7" />
+            <flowNodeTargets>
+              <controlFlow Id="027118b8-94e4-4e05-b6df-7f167ceb73af" isLeaf="false">
+                <opaqueActionMoniker Id="b02cdc7f-a88e-4f0c-9305-343121e8104f" LastKnownName="merge to P strand" />
+                <elementDefinition Id="3f7d1e84-c913-40e0-9849-d8f0f65e7b97" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9bc21b0c-0cd0-48d2-b3f7-a8c1e035878d" name="ready for PRD impl." isLeaf="false">
+            <elementDefinition Id="ccde8dca-9b1d-44ba-b867-7b71d1a3b4bd" />
+            <flowNodeTargets>
+              <controlFlow Id="2bb53edb-e47c-4c16-be5d-1de912fa2b46" isLeaf="false">
+                <opaqueActionMoniker Id="5305b32f-b026-4d59-a6b9-37d8736079c5" LastKnownName="PRD implementation" />
+                <elementDefinition Id="0e2fa3d7-5c95-4f59-a925-b3aec025e934" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="682bd280-98bd-4023-996d-d4718d2428ab" name="Q-Box  testing" isLeaf="false">
+            <elementDefinition Id="744c4b47-1057-4d5a-8242-7282cf508589" />
+            <flowNodeTargets>
+              <controlFlow Id="eed3ca40-f960-40e7-884c-96f8845fc9e6" isLeaf="false">
+                <opaqueActionMoniker Id="9bc21b0c-0cd0-48d2-b3f7-a8c1e035878d" LastKnownName="ready for PRD impl." />
+                <elementDefinition Id="eb6dbe36-5a6a-47ee-ac23-4f2a6dac25dc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="48c011ab-db48-4f6e-8fd3-2a36062a046c" name="Q-Box implementation" isLeaf="false">
+            <elementDefinition Id="7b09b707-2509-4243-88f1-3fd4bba761e1" />
+            <flowNodeTargets>
+              <controlFlow Id="d9085475-ea22-4651-aec0-1f772e339ef4" isLeaf="false">
+                <opaqueActionMoniker Id="682bd280-98bd-4023-996d-d4718d2428ab" LastKnownName="Q-Box  testing" />
+                <elementDefinition Id="af06e262-ce02-43d9-9d34-d466f4c7c25e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2791fd2a-f2a1-4a5d-8c7e-b31cb21682f8" name="ready for Q-Box impl." isLeaf="false">
+            <elementDefinition Id="ebb965a4-0a68-412f-ad06-dbc9ac69e4b8" />
+            <flowNodeTargets>
+              <controlFlow Id="aaf2b6da-8fb2-4c41-be08-42a44aa60d28" isLeaf="false">
+                <opaqueActionMoniker Id="48c011ab-db48-4f6e-8fd3-2a36062a046c" LastKnownName="Q-Box implementation" />
+                <elementDefinition Id="b150de5b-4fa3-4195-a0ad-2f65e80d7dad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="207135e4-3d7c-42ee-81b0-b729d9e1b594" name="D-Box testing" isLeaf="false">
+            <elementDefinition Id="fb63192a-0ff7-4d1d-aaa7-577268423bba" />
+            <flowNodeTargets>
+              <controlFlow Id="14ab8eff-b69e-4b9e-8b3d-d94e019a2595" isLeaf="false">
+                <opaqueActionMoniker Id="f1330861-097b-4f29-95b4-89b1320be6ad" LastKnownName="Testing Finished D-Box" />
+                <elementDefinition Id="7fc4a1fa-d02d-4986-8586-0f004c0cb125" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7ae2aee2-50ba-4c38-b276-fe1788cc2956" name="Implementation planning" isLeaf="false">
+            <elementDefinition Id="cde738d4-6e29-4ebb-b37e-8d827efad85f" />
+            <flowNodeTargets>
+              <controlFlow Id="d0183c6b-c487-4a69-8226-16e7e3dfe416" isLeaf="false">
+                <opaqueActionMoniker Id="566cfe20-1042-4fbf-8540-01bd4a0a9a4a" LastKnownName="Start Implementation" />
+                <elementDefinition Id="a5338104-3e56-4974-b35e-32a33bd57129" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="63f38d34-c925-4ce2-a960-900d3518251e" name="In realization" isLeaf="false">
+            <elementDefinition Id="12de9313-62b5-4966-bccf-3c1cd3edf0e5" />
+            <flowNodeTargets>
+              <controlFlow Id="d1f10a85-26e4-425d-afe3-2d50f3677ec7" isLeaf="false">
+                <opaqueActionMoniker Id="7ae2aee2-50ba-4c38-b276-fe1788cc2956" LastKnownName="Implementation planning" />
+                <elementDefinition Id="b429cb4c-2eb8-4645-9b9c-66fdb4f41dfd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="ca2d7152-3198-44f3-9461-31af3fb79f56" name="Initial1" isLeaf="false">
+            <elementDefinition Id="ab26f5d4-45da-4129-a3ac-6b13ff342957" />
+            <flowNodeTargets>
+              <controlFlow Id="a00a97bf-dae9-40af-ba10-29107616f469" isLeaf="false">
+                <callOperationActionMoniker Id="88c615af-3c82-4ae5-b582-510ef7951a8a" LastKnownName="Incoming Ticket" />
+                <elementDefinition Id="afbc139a-7548-49d5-bc88-f30e945febd2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="dbf1dd16-4afb-437c-a0e7-ca275c6cce77" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="9733b531-fabc-4f81-93ef-66895b6fbf80" />
+          </activityFinalNode>
+          <opaqueAction Id="08f69296-35ff-45d6-89cb-77d976daac55" name="SME Release Planning" isLeaf="false">
+            <elementDefinition Id="ee678195-ac0a-48a6-bce6-204ab88c1d2e" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="d4c6ce68-c372-4ffb-b9a0-502d1535bd2c" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="fe1217e1-e746-4652-b578-c07805f80940" />
+                  <objectFlowTargets>
+                    <objectFlow Id="bb136e8b-b321-4399-98b8-925219eecbd6" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <joinNodeMoniker Id="cfc57413-3d9e-4fab-b43b-9c84b795ff6e" LastKnownName="Join1" />
+                      <elementDefinition Id="4142560a-058d-473c-b00d-61c5f0b928ff" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="d13ad0ac-4886-4f44-9b1f-0e446964b338" name="2147483647" value="2147483647">
+                      <elementDefinition Id="99c979f4-4340-484f-b716-8718886f9b6d" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="340d5a2b-845b-451e-9b54-fbfc2a4e5014" name="Clamse N ZHHR to 1 Workitem" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="9430989e-1b6a-41bf-ac7f-b8e8a7d29437" />
+                  <objectFlowTargets>
+                    <objectFlow Id="bb3405d2-0588-48be-9ba1-b76e41287e50" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <joinNodeMoniker Id="cfc57413-3d9e-4fab-b43b-9c84b795ff6e" LastKnownName="Join1" />
+                      <elementDefinition Id="f17f00dd-8826-4364-80da-c041cffcc5d4" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="819e4143-686e-4d34-a3d5-de71ffd69d8c" name="2147483647" value="2147483647">
+                      <elementDefinition Id="f004d572-38c3-4c27-977c-3b124b1df1f5" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="124abf42-684f-431c-a016-a4b2f458526c" name="Implementation Finish" isLeaf="false">
+            <elementDefinition Id="d5d82d74-6d3f-4a92-9d88-dc27e962d321" />
+            <flowNodeTargets>
+              <controlFlow Id="44932aac-71a8-4f16-aee0-940d20d71fec" isLeaf="false">
+                <opaqueActionMoniker Id="207135e4-3d7c-42ee-81b0-b729d9e1b594" LastKnownName="D-Box testing" />
+                <elementDefinition Id="6a58750b-1d91-40ad-a76f-6de71cc1d33a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d3a5b600-90fa-40d8-af83-308d904e0d5c" name="Forward to SME" isLeaf="false">
+            <elementDefinition Id="863deb41-ad8d-4f5b-9758-68d1213dffac" />
+            <flowNodeTargets>
+              <controlFlow Id="b47f6b93-c3d4-4abe-956c-d1d5a2094ae3" isLeaf="false">
+                <opaqueActionMoniker Id="cb8b54a5-bf38-4856-ab18-3fdb86e3db17" LastKnownName="SME Survey" />
+                <elementDefinition Id="d97e4245-5e87-46b2-9ef7-78ac99b61c7c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="566cfe20-1042-4fbf-8540-01bd4a0a9a4a" name="Start Implementation" isLeaf="false">
+            <elementDefinition Id="66518604-d34b-4103-9260-d1139feead48" />
+            <flowNodeTargets>
+              <controlFlow Id="18308786-b688-4c34-8977-13de3f7f8021" isLeaf="false">
+                <opaqueActionMoniker Id="af37b51e-92b9-478a-84aa-903940e53ad9" LastKnownName="branch workstrand " />
+                <elementDefinition Id="4284b542-66ce-4ff3-b781-4a42f7720b42" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f1330861-097b-4f29-95b4-89b1320be6ad" name="Testing Finished D-Box" isLeaf="false">
+            <elementDefinition Id="df5b3965-7f75-43e3-befa-d25fb177cac4" />
+            <flowNodeTargets>
+              <controlFlow Id="f7a12562-f9a7-41db-9f90-9df196d16cd5" isLeaf="false">
+                <opaqueActionMoniker Id="1b20cdc7-f3a7-495a-bf6f-0927f660f220" LastKnownName="merge to Q strand" />
+                <elementDefinition Id="0a2cf55a-be87-472a-8224-598119aba43b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8a5cd693-8f96-456b-892c-0d756fc06ce1" name="Close Workitem" isLeaf="false">
+            <elementDefinition Id="ce65db67-b077-4e13-af96-aebec4ab07e8" />
+          </opaqueAction>
+          <opaqueAction Id="478ee7b7-4780-4709-a0bd-f1cb4dbb1a90" name="Reassign Ticket" isLeaf="false">
+            <elementDefinition Id="7fe527b5-142b-40f2-99dd-4ca0f1805991" />
+            <flowNodeTargets>
+              <controlFlow Id="d029229c-bed2-4eeb-b6a8-010f46ce3395" isLeaf="false">
+                <opaqueActionMoniker Id="14e77c1c-9082-4463-a8fc-62a1827f23e4" LastKnownName="Accept" />
+                <elementDefinition Id="9d2627e7-6013-422e-ad71-932f124e0342" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="14e77c1c-9082-4463-a8fc-62a1827f23e4" name="Accept" isLeaf="false">
+            <elementDefinition Id="019821bb-2f1c-4cda-900e-1c449bb4e900" />
+            <flowNodeTargets>
+              <controlFlow Id="b84e3234-0b59-43cd-b226-77392691c9fd" isLeaf="false">
+                <opaqueActionMoniker Id="b4c4a8da-4f12-49d0-8c6d-13dc30eaf8d9" LastKnownName="Work In Progress" />
+                <elementDefinition Id="93286d1f-f39f-4f05-a292-dde074efa83e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="dfad9a64-c5ef-4a00-b10b-11cb83398d3a" name="PRD implementation Finished" isLeaf="false">
+            <elementDefinition Id="9f7e57e1-4175-4fa2-897e-5ad6a806f162" />
+            <flowNodeTargets>
+              <controlFlow Id="883d1d77-0a0a-4e6a-a52d-146862f87f65" isLeaf="false">
+                <opaqueActionMoniker Id="a4c347b6-612a-4f43-bac2-c866d17bc37d" LastKnownName="PRD Testing" />
+                <elementDefinition Id="4c4dc847-a17e-4103-98d8-f2749c6a3a8e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7d4fc7f7-56bf-487c-bfec-281136b1b78c" name="Howto">
+    <elementDefinition Id="a87c1e2d-1e50-46d5-b41c-c24322d9dfc8" />
+    <profileInstances>
+      <packageHasProfileInstances Id="cc3770cf-fd53-4da1-a75f-5c980295ab7b">
+        <profileInstance Id="7f3b0c7e-2914-47fb-a055-a5477378b1cf" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="98770e8f-3958-443f-bd51-502ab5752c5d">
+        <profileInstance Id="770a234d-389e-41e2-bc90-e3074b58a6bb" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

@@ -1,0 +1,1002 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="a87c1e2d-1e50-46d5-b41c-c24322d9dfc8"
+  name="Howto" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="dcec90a0-7877-404d-bbde-974d030e8b71">
+      <body>Is a Codechange neccesary ?</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="5ad3166e-9654-42dd-913d-0f7b23c6cef7"
+          LastKnownName="Codechange Neccesary"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="f7c89a45-c6ec-4454-827b-e277c4dd04b4">
+      <body>Architect:
+-Check the Code if all rules are fulfilled
+-Check Documentation</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="b2276485-4c67-4da3-9cc5-fbb3c4605ff2"
+          LastKnownName="Whitebox Test"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="9531c3a2-c3b0-42bb-9a71-36d70db66eba">
+      <body>Owner:
+-Check functional and buissnes behavior
+-Check user docummentation</body>
+    </comment>
+    <comment
+      Id="9a59c760-00a7-4e83-ac5a-3352501da899">
+      <body>Architect:
+Desription of Software architectural changes or enhancements neccesary
+</body>
+    </comment>
+    <comment
+      Id="4acdbd08-7992-4ae1-9caa-7010fa1bdce2">
+      <body>Implementation Manager:
+
+-Check all technical prerequisites
+-All Documents are approved or enhanced e.g. Documentation</body>
+    </comment>
+    <comment
+      Id="a48aa1a9-1b20-4f3d-8a7c-e1fc092f12f0">
+      <body>If there is no workbranch present for this workitem then 
+Branch from D strand to 
+work item strand</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="a3f6d9e6-d577-4a6f-9e5c-0c5bc84d7fd8"
+          LastKnownName="branch workstrand "
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="aad25a68-df71-44ac-bdaa-fd86e0826523">
+      <body>Open Work Item with: 
+-all Related ticket numbers
+- Link SME Ticket(s) to Workitem and vice verser
+-definition of done for this issue 
+Work item is defined for the branch as transport protocol</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="35f43112-44c2-4d33-b56f-b54788081e83"
+          LastKnownName="open work item or add to existing"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="40cde401-9b54-4082-991a-5a14dc6624d7">
+      <body>Architect:
+-check if all formalisms are done to complete</body>
+    </comment>
+    <comment
+      Id="16355711-5b08-483e-a650-013637ca9655">
+      <body>HPSM Section</body>
+    </comment>
+    <comment
+      Id="f818746a-ab0d-4b11-8c13-daf42d62469e">
+      <body>SMP Section</body>
+    </comment>
+    <comment
+      Id="959f856a-30ee-4001-9a71-cda6846d7d16">
+      <body>TFS / Visual Studio Section</body>
+    </comment>
+    <comment
+      Id="32a8396f-f22d-4fb5-8d0f-6f9b1d1d98e2">
+      <body>Add CR Ref with  comment in the code.  Follow naming convention for variables. Prepare Unit test case document, execute testcases. </body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="da6c102e-346f-4a8e-b8cd-65e0f8378a06"
+          LastKnownName="implement"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="d15e9a76-ce0b-465a-9cdf-5c7bc76b3e09">
+      <body>Merge the changes to D-system</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="3ba38d91-c19d-41eb-9689-03f2f38e9cc2"
+          LastKnownName="Merge to D system"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="621637f3-d40c-443b-bf87-a6570fd9c180">
+      <body>Merge the changes to Q-system
+Attach all changesets to Workitem (last chance)</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="40647324-638a-4d5c-9d59-6b806bb7d40c"
+          LastKnownName="merge to Q strand"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="48733e55-208a-441e-b1bf-42202d19c820">
+      <body>Check for Coding guidlines / QA GATE</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="b2276485-4c67-4da3-9cc5-fbb3c4605ff2"
+          LastKnownName="Whitebox Test"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="29966861-af03-4fa4-9080-d4b323f60dd7">
+      <body>Analyse Problems 
+and describe To Do's in Analysis/Research section of ticket.</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="9a9b0da1-019b-4e71-8104-d54ea29e353b"
+          LastKnownName="Analyse"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="14685f23-c563-4ee7-aeb9-61197dbf02fd">
+      <body>Link ZHHR Number with HPSM Number.
+Describe Details with your understandig of request.</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="12410ba1-8ddb-4760-82e7-6f7e7ac3de19"
+          LastKnownName="Create ZHHR"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="78f07a41-6c83-4f85-8ebd-84e1c1e4e237">
+      <body>Perform testcases defined above
+Add Changesets to workitem</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="fb63192a-0ff7-4d1d-aaa7-577268423bba"
+          LastKnownName="D-Box testing"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a0b2e1c3-c439-47fb-b70b-452e1a5a3c16">
+      <body>Verify the Unit test cases / Perform All Test plans during the testing on D-system attach them to Workitem as protocol
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="6bff175f-ed98-47be-8cea-c57e4306a20c"
+          LastKnownName="publish to D system"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="60ae313d-0755-40e6-b134-0aea2600043e">
+      <body>GIM QA Gate II
+   - last hands on for supplier
+   - check of workitem
+   - check of Merge Errors
+   - check of documentation complete  
+   - definition of done fulfilled
+   - Send Email to merge into P strand</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="c92d912b-b324-4813-b823-48690eb989d7"
+          LastKnownName="PRD implementation"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7e1f1783-a160-4ab6-babb-4d6f05885ec1">
+      <body>eg check all links CRT &gt; TFS</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="0128c18e-5aab-4d4d-8c5d-c8a8c33cde70"
+          LastKnownName="Business Approval"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="c2d6b3ef-a947-4b53-b86f-785b183525ba">
+      <body>Email will send to GIM QA Gate II from QBOX tester</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="ccde8dca-9b1d-44ba-b867-7b71d1a3b4bd"
+          LastKnownName="ready for PRD impl."
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="22650d6a-91bd-45ee-a77e-190d924cb3ab">
+      <body>Email will send to GIM QA Gate II</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="1084501a-57bb-4dca-b486-7c3b84aa1ef8"
+          LastKnownName="merge to P strand"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="61e011de-be2a-453b-b79f-616ba609d563">
+      <body>PRD testing successfully done and then close work item</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="ce65db67-b077-4e13-af96-aebec4ab07e8"
+          LastKnownName="Close Workitem"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="3c5f3da8-c68b-4267-83b3-e679b310042f">
+      <body>Business tester will perform this activity</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="744c4b47-1057-4d5a-8242-7282cf508589"
+          LastKnownName="Q-Box  testing"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7dbbc83d-5713-4c39-b0fe-ba186ad565a0">
+      <body>Close the HPSM tickets if not done</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="7c0d29a4-bd9e-4ccf-aeee-d47537b57921"
+          LastKnownName="Complete"
+          LastKnownLocation="Howto.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="6d346b94-6d54-4b2c-9b49-8e4a10665209"
+        name="Steps for Ticket Handling"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <callOperationAction
+            Id="574e4e70-387c-47d0-9739-ee42ef5e073d"
+            name="Incoming Ticket"
+            isLeaf="false">
+            <description>Accept Ticket</description>
+            <flowNodeTargets>
+              <controlFlow
+                Id="d0592fff-357a-4c5c-ba6b-29aa524e87ed"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5ad3166e-9654-42dd-913d-0f7b23c6cef7"
+                  LastKnownName="Codechange Neccesary"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callOperationAction>
+          <decisionNode
+            Id="5ad3166e-9654-42dd-913d-0f7b23c6cef7"
+            name="Codechange Neccesary"
+            isLeaf="false">
+            <description>Is a Codechenge neccesary ?</description>
+            <flowNodeTargets>
+              <controlFlow
+                Id="7d357b8d-5ec3-4745-b344-99bd4f2a6f8b"
+                guard="No"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9ede5e7c-4cdf-4e83-9382-350722e8ae53"
+                  LastKnownName="Reassign Ticket"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="373737ba-10c8-4057-89c9-fb80a1068f98"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7fe527b5-142b-40f2-99dd-4ca0f1805991"
+                  LastKnownName="Reassign Ticket"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="9ede5e7c-4cdf-4e83-9382-350722e8ae53"
+            name="Reassign Ticket"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38c799f8-67ac-42de-93ee-a493ddc80db7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ba324757-2f53-4799-bce2-e139de4f0466"
+                  LastKnownName="Customizing"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9a9b0da1-019b-4e71-8104-d54ea29e353b"
+            name="Analyse"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="69ca0457-1cbc-4476-93ed-e047578f3962"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="12410ba1-8ddb-4760-82e7-6f7e7ac3de19"
+                  LastKnownName="Create ZHHR"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="48d8f5d2-1915-4cbf-a0fc-445478010817"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9ede5e7c-4cdf-4e83-9382-350722e8ae53"
+                  LastKnownName="Reassign Ticket"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f33f3863-7400-4df3-9cc8-1f8d4b70d78e"
+            name="Work In Progress"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2a977514-ad99-410f-9be0-4ec0ae30ae12"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9a9b0da1-019b-4e71-8104-d54ea29e353b"
+                  LastKnownName="Analyse"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="12410ba1-8ddb-4760-82e7-6f7e7ac3de19"
+            name="Create ZHHR"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c84eb2d-c3ef-4162-b5d4-bd049756f814"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="863deb41-ad8d-4f5b-9758-68d1213dffac"
+                  LastKnownName="Forward to SME"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0128c18e-5aab-4d4d-8c5d-c8a8c33cde70"
+            name="Business Approval"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1bbc67c1-0826-417c-81a8-c16f321c8c00"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="35f43112-44c2-4d33-b56f-b54788081e83"
+                  LastKnownName="open work item or add to existing"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="cb08ca07-2567-465a-b460-adc0bdf6e2ae"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="12de9313-62b5-4966-bccf-3c1cd3edf0e5"
+                  LastKnownName="In realization"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ba324757-2f53-4799-bce2-e139de4f0466"
+            name="Customizing"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3343780d-d120-4938-957f-0b750bff6292"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9733b531-fabc-4f81-93ef-66895b6fbf80"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3ba38d91-c19d-41eb-9689-03f2f38e9cc2"
+            name="Merge to D system"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3b12472f-9011-4132-81e4-b92eaea45d69"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6bff175f-ed98-47be-8cea-c57e4306a20c"
+                  LastKnownName="publish to D system"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b2276485-4c67-4da3-9cc5-fbb3c4605ff2"
+            name="Whitebox Test"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="67e9fd32-e1dc-42ca-b1fc-6de1a3a64450"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2065f8f5-7fa2-4911-9747-e14aab58a0a5"
+                  LastKnownName="Publish to QBOX"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6bff175f-ed98-47be-8cea-c57e4306a20c"
+            name="publish to D system"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c51b35ac-c914-44f0-bb86-c1511e35f2d7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d5d82d74-6d3f-4a92-9d88-dc27e962d321"
+                  LastKnownName="Implementation Finish"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2065f8f5-7fa2-4911-9747-e14aab58a0a5"
+            name="Publish to QBOX"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7caa0c31-5743-4a94-8a4d-d6eb998c372c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ebb965a4-0a68-412f-ad06-dbc9ac69e4b8"
+                  LastKnownName="ready for Q-Box impl."
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c6f7bf54-b797-4449-8f4f-ed4395e1ccdb"
+            name="SME Survey"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1e817a83-e02b-4cf7-aefb-e223925533c8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ee678195-ac0a-48a6-bce6-204ab88c1d2e"
+                  LastKnownName="SME Release Planning"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="40647324-638a-4d5c-9d59-6b806bb7d40c"
+            name="merge to Q strand"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="46f89b7d-35e2-4e39-90f4-eec9c607f5e0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b2276485-4c67-4da3-9cc5-fbb3c4605ff2"
+                  LastKnownName="Whitebox Test"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="da6c102e-346f-4a8e-b8cd-65e0f8378a06"
+            name="implement"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="78217355-7583-4fd4-bf70-2367339a8138"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3ba38d91-c19d-41eb-9689-03f2f38e9cc2"
+                  LastKnownName="Merge to D system"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a3f6d9e6-d577-4a6f-9e5c-0c5bc84d7fd8"
+            name="branch workstrand "
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="138d0084-bbd2-47e9-95e2-b5ac574373ff"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="da6c102e-346f-4a8e-b8cd-65e0f8378a06"
+                  LastKnownName="implement"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="35f43112-44c2-4d33-b56f-b54788081e83"
+            name="open work item or add to existing"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5c29a655-1431-4511-85ba-82cd1184fc49"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0128c18e-5aab-4d4d-8c5d-c8a8c33cde70"
+                  LastKnownName="Business Approval"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="83f7ad84-e70c-432b-88d7-a3da4363fb72"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0ad65c85-e8a5-47f9-8090-ef429eeed9f3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="35f43112-44c2-4d33-b56f-b54788081e83"
+                  LastKnownName="open work item or add to existing"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="1084501a-57bb-4dca-b486-7c3b84aa1ef8"
+            name="merge to P strand"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1af10263-2f34-4002-9958-3e70607842ee"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9f7e57e1-4175-4fa2-897e-5ad6a806f162"
+                  LastKnownName="PRD implementation Finished"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="12de9313-62b5-4966-bccf-3c1cd3edf0e5"
+            name="In realization"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b429cb4c-2eb8-4645-9b9c-66fdb4f41dfd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cde738d4-6e29-4ebb-b37e-8d827efad85f"
+                  LastKnownName="Implementation planning"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="ab26f5d4-45da-4129-a3ac-6b13ff342957"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="afbc139a-7548-49d5-bc88-f30e945febd2"
+                isLeaf="false">
+                <callOperationActionMoniker
+                  Id="574e4e70-387c-47d0-9739-ee42ef5e073d"
+                  LastKnownName="Incoming Ticket"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="9733b531-fabc-4f81-93ef-66895b6fbf80"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="ee678195-ac0a-48a6-bce6-204ab88c1d2e"
+            name="SME Release Planning"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="fe1217e1-e746-4652-b578-c07805f80940"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="4142560a-058d-473c-b00d-61c5f0b928ff"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <joinNodeMoniker
+                        Id="83f7ad84-e70c-432b-88d7-a3da4363fb72"
+                        LastKnownName="Join1"
+                        LastKnownLocation="Howto.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="99c979f4-4340-484f-b716-8718886f9b6d"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="9430989e-1b6a-41bf-ac7f-b8e8a7d29437"
+                  name="Clamse N ZHHR to 1 Workitem"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="f17f00dd-8826-4364-80da-c041cffcc5d4"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <joinNodeMoniker
+                        Id="83f7ad84-e70c-432b-88d7-a3da4363fb72"
+                        LastKnownName="Join1"
+                        LastKnownLocation="Howto.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="f004d572-38c3-4c27-977c-3b124b1df1f5"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="d5d82d74-6d3f-4a92-9d88-dc27e962d321"
+            name="Implementation Finish"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6a58750b-1d91-40ad-a76f-6de71cc1d33a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fb63192a-0ff7-4d1d-aaa7-577268423bba"
+                  LastKnownName="D-Box testing"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="863deb41-ad8d-4f5b-9758-68d1213dffac"
+            name="Forward to SME"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d97e4245-5e87-46b2-9ef7-78ac99b61c7c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c6f7bf54-b797-4449-8f4f-ed4395e1ccdb"
+                  LastKnownName="SME Survey"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="66518604-d34b-4103-9260-d1139feead48"
+            name="Start Implementation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4284b542-66ce-4ff3-b781-4a42f7720b42"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a3f6d9e6-d577-4a6f-9e5c-0c5bc84d7fd8"
+                  LastKnownName="branch workstrand "
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="df5b3965-7f75-43e3-befa-d25fb177cac4"
+            name="Testing Finished D-Box"
+            isLeaf="false">
+            <elementDefinition
+              Id="46d013ac-55c6-4987-b312-e5de97ed81c4" />
+            <flowNodeTargets>
+              <controlFlow
+                Id="0a2cf55a-be87-472a-8224-598119aba43b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="40647324-638a-4d5c-9d59-6b806bb7d40c"
+                  LastKnownName="merge to Q strand"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ce65db67-b077-4e13-af96-aebec4ab07e8"
+            name="Close Workitem"
+            isLeaf="false" />
+          <opaqueAction
+            Id="7fe527b5-142b-40f2-99dd-4ca0f1805991"
+            name="Reassign Ticket"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9d2627e7-6013-422e-ad71-932f124e0342"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="019821bb-2f1c-4cda-900e-1c449bb4e900"
+                  LastKnownName="Accept"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="019821bb-2f1c-4cda-900e-1c449bb4e900"
+            name="Accept"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="93286d1f-f39f-4f05-a292-dde074efa83e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f33f3863-7400-4df3-9cc8-1f8d4b70d78e"
+                  LastKnownName="Work In Progress"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9f7e57e1-4175-4fa2-897e-5ad6a806f162"
+            name="PRD implementation Finished"
+            isLeaf="false">
+            <elementDefinition
+              Id="0b79abd2-d0a9-40a7-a4d2-9d56acd89d48" />
+            <flowNodeTargets>
+              <controlFlow
+                Id="4c4dc847-a17e-4103-98d8-f2749c6a3a8e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7ebadd96-08fa-4e34-9553-8fbb07bad8ee"
+                  LastKnownName="PRD Testing"
+                  LastKnownLocation="Howto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <opaqueAction
+    Id="7c0d29a4-bd9e-4ccf-aeee-d47537b57921"
+    name="Complete"
+    isLeaf="false">
+    <elementDefinition
+      Id="930843e8-5a62-4906-a523-343f26e7ddd0" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="b184c277-bc3f-466d-b722-5261a6fee698"
+        isLeaf="false">
+        <activityFinalNodeMoniker
+          Id="9733b531-fabc-4f81-93ef-66895b6fbf80"
+          LastKnownName="ActivityFinal1"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+      <controlFlow
+        Id="5fc6fc04-3dc3-43ef-a563-817ac878c741"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="ce65db67-b077-4e13-af96-aebec4ab07e8"
+          LastKnownName="Close Workitem"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="7860e1bc-4ce4-4e6c-ad85-1286b9d51f06"
+    name="Ready for confirmation"
+    isLeaf="false">
+    <elementDefinition
+      Id="c88a0a27-1631-4e70-b0cc-0a9264285f52" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="650a02a3-5e6b-44a6-a340-536989e5b2cf"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="7c0d29a4-bd9e-4ccf-aeee-d47537b57921"
+          LastKnownName="Complete"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="7ebadd96-08fa-4e34-9553-8fbb07bad8ee"
+    name="PRD Testing"
+    isLeaf="false">
+    <elementDefinition
+      Id="f26fe73f-aff4-4f95-b021-fa4b991dcb90" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="73e03393-118b-467a-a38c-3310ff8a1179"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="7860e1bc-4ce4-4e6c-ad85-1286b9d51f06"
+          LastKnownName="Ready for confirmation"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+  <opaqueAction
+    Id="cde738d4-6e29-4ebb-b37e-8d827efad85f"
+    name="Implementation planning"
+    isLeaf="false">
+    <elementDefinition
+      Id="60a3167e-e162-4934-97dd-7eb6f3644294" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="a5338104-3e56-4974-b35e-32a33bd57129"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="66518604-d34b-4103-9260-d1139feead48"
+          LastKnownName="Start Implementation"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="fb63192a-0ff7-4d1d-aaa7-577268423bba"
+    name="D-Box testing"
+    isLeaf="false">
+    <elementDefinition
+      Id="46d7de6d-cb84-461f-9bcb-fe9e8c4d707c" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="7fc4a1fa-d02d-4986-8586-0f004c0cb125"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="df5b3965-7f75-43e3-befa-d25fb177cac4"
+          LastKnownName="Testing Finished D-Box"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="ebb965a4-0a68-412f-ad06-dbc9ac69e4b8"
+    name="ready for Q-Box impl."
+    isLeaf="false">
+    <elementDefinition
+      Id="46d013ac-55c6-4987-b312-e5de97ed81c4" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="b150de5b-4fa3-4195-a0ad-2f65e80d7dad"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="7b09b707-2509-4243-88f1-3fd4bba761e1"
+          LastKnownName="Q-Box implementation"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="744c4b47-1057-4d5a-8242-7282cf508589"
+    name="Q-Box  testing"
+    isLeaf="false">
+    <elementDefinition
+      Id="fd6648b7-bf41-4e77-ba64-91b10cbc127b" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="eb6dbe36-5a6a-47ee-ac23-4f2a6dac25dc"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="ccde8dca-9b1d-44ba-b867-7b71d1a3b4bd"
+          LastKnownName="ready for PRD impl."
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="ccde8dca-9b1d-44ba-b867-7b71d1a3b4bd"
+    name="ready for PRD impl."
+    isLeaf="false">
+    <elementDefinition
+      Id="bb11f4c0-63af-49d3-93b7-a75efa95cc33" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="0e2fa3d7-5c95-4f59-a925-b3aec025e934"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="c92d912b-b324-4813-b823-48690eb989d7"
+          LastKnownName="PRD implementation"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="c92d912b-b324-4813-b823-48690eb989d7"
+    name="PRD implementation"
+    isLeaf="false">
+    <elementDefinition
+      Id="0b79abd2-d0a9-40a7-a4d2-9d56acd89d48" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="3f7d1e84-c913-40e0-9849-d8f0f65e7b97"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="1084501a-57bb-4dca-b486-7c3b84aa1ef8"
+          LastKnownName="merge to P strand"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+  <opaqueAction
+    Id="7b09b707-2509-4243-88f1-3fd4bba761e1"
+    name="Q-Box implementation"
+    isLeaf="false">
+    <elementDefinition
+      Id="95c8c41d-9d4d-4201-a018-dfd3a8955e9f" />
+    <flowNodeTargets>
+      <controlFlow
+        Id="af06e262-ce02-43d9-9d34-d466f4c7c25e"
+        isLeaf="false">
+        <opaqueActionMoniker
+          Id="744c4b47-1057-4d5a-8242-7282cf508589"
+          LastKnownName="Q-Box  testing"
+          LastKnownLocation="Howto.uml" />
+      </controlFlow>
+    </flowNodeTargets>
+  </opaqueAction>
+</modelStoreModel>

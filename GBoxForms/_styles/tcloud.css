@@ -1,0 +1,170 @@
+﻿/* slecttion of different style shied designs and colors */
+
+
+body
+{
+position: relative;
+margin: 0px;
+padding: 0px;
+}
+
+#tagcloudform
+{
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 40px;
+    margin:1px;
+    padding: 0px;
+}
+
+.tc
+{
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+#tagcloudform a
+{
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+    font-style: normal;
+    color: #666666;
+    padding: 1px;
+    margin: 0px;
+    position: relative;
+    text-decoration: none;
+}
+#tagcloudform .tc_grau a
+{
+    color: #666666;
+}
+#tagcloudform .tc_green a
+{
+    color: #6ca942;
+}
+#tagcloudform .tc_blue a
+{
+    color: #559ac6;
+}
+#tagcloudform .tc_gold a
+{
+    color: #bda33c;
+}
+#tagcloudform .tc_green a
+{
+    color: #93b48e;
+}
+#tagcloudform .tc_orange a
+{
+    color: #eea516;
+}
+#tagcloudform .tc_darkgreen a
+{
+    color: #6ca942;
+}
+#tagcloudform .tc_ET_dunkelgrau a
+{
+    color: #333333;
+}
+#tagcloudform .tc_cockpit_blau a
+{
+    color: #333333;
+}
+
+    
+#tagcloudform a:active
+{
+    text-decoration: none;
+}
+    
+    
+#tagcloudform a:hover
+{
+    text-decoration: none;
+    color: #222222;
+    padding: 1px;
+    margin: 1px;
+    /*border: solid 1px #222222;*/
+    border: none;
+}
+#tagcloudform .tc_grau a:hover
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color: #666666;
+}
+#tagcloudform .tc_green a:hover
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color:#6ca942;
+}
+#tagcloudform .tc_blue a:hover
+{
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color:#55abe3;
+}
+#tagcloudform .tc_gold a:hover
+{
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color:#bda33c;
+}
+#tagcloudform .tc_green a:hover
+{
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color:#93b48e;
+}
+#tagcloudform .tc_orange a:hover
+{
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color:#eea516;
+}
+#tagcloudform .tc_darkgreen a:hover
+{
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color:#6ca942;
+}
+#tagcloudform .tc_ET_dunkelgrau a:hover
+{
+    text-decoration: none;
+    color:#333333;
+    padding: 1px;
+    margin: 0px;
+    background-color:#EEEEEE;
+}
+#tagcloudform .tc_cockpit_blau a:hover
+{
+    text-decoration: underline;
+    color:#FFFFFF;
+    padding: 1px;
+    margin: 0px;
+    background-color:#5b86a4;
+}
+  
+    
+#tagcloudform a:visited
+{
+    text-decoration: none;
+}
+    
+    
+#tagcloudform a:link
+{
+    text-decoration: none;
+}

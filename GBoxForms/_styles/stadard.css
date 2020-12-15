@@ -1,0 +1,561 @@
+﻿body {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color: #333333; 
+    background-color:#ffffff; 
+    margin: 0; 
+    padding: 0;
+    }
+    
+/*background-color:#eeeeee;*/
+h1, h2, h3 {font-family:Verdana, Sans-Serif; }
+h1{font-size: 18px; }
+h2{font-size: 12px; }
+h3{font-size: 12px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}
+h4{font-size: 10px;}
+
+#mc_wiz{
+    width: 1030px; 
+    background-color:#ffffff; 
+    padding: 0px 2px 0px 0px; 
+    margin: 0px 30px 0px 0px; 
+    border-bottom: solid 1px #dddddd;
+    }
+
+/* DYNAMIC FORM */
+/* width: 997px; */
+#mc_wiz_df{
+    width: 99%; 
+    background-color:#ffffff; 
+    background-color:#eeeeee; 
+    background-image:url(../Images/farbverlauf_bg.jpg); 
+    background-position:top right; 
+    background-repeat:repeat-x;
+    padding: 0px 0px 0px 0px; 
+    margin: 0px 0px 0px 0px; 
+    border-bottom: solid 1px #dddddd;
+    border-right: solid 1px #ffffff;
+}
+
+#toppart{ background-color: #ffffff; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; 
+    width: 100%; }
+
+#bottompart{ color:#333333; font-size:10px; text-align:left; 
+    padding: 0px 0px 0px 0px; margin: 0px 30px 0px 0px}
+#bottompart div{padding: 10px 10px 10px 10px;}
+
+#toppart_topleiste { 
+    font-size:10px; 
+    color: #FFFFFF; 
+    background-color: #444444; 
+    height: 12px; 
+    border-bottom: 1px solid #333333;
+    padding: 3px 0px 2px 0px; 
+    }
+
+#toppart_topleiste a {
+    text-decoration:none;
+    color: #FFFFFF; 
+    }
+    
+#toppart_topleiste_left{
+    position: absolute;
+    text-align:left;
+    width: 400px; 
+    padding: 0px 0px 0px 4px;
+    margin: 0px 0px 0px 0px; 
+    }
+#toppart_topleiste_right{
+    position: absolute;
+    width: auto;
+    text-align:right; 
+    right:1%;
+    padding: 0px 10px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    }     
+    
+#toppart_logoleiste{ 
+    background-color: #ffffff; 
+    position:static; 
+    height: 69px;
+    width: auto;
+    }
+#toppart_logoleiste_left{ background-color: #5c5d61; width: 144px; height: 51px; float:left; 
+    padding: 18px 0px 0px 21px; }
+#toppart_logoleiste_center{ background-color: #ffffff; height: 69px; float:left; width: 530px; 
+    background-image:url(../Images/gbox_headimg.jpg); 
+    background-position:bottom; background-repeat:no-repeat;}
+#toppart_logoleiste_right{ background-color: #ffffff; height: 49px; float:right; 
+    text-align:right; padding: 9px 0px 0px 0px;}
+.toppart_support_navi{font-size:9px; color: #5a5a5a; padding: 0px 70px 0px 0px;}
+.toppart_support_navi a{font-size:9px; color: #5a5a5a; text-decoration: none;}
+.toppart_support_navi a:hover{font-size:9px; color: #5a5a5a; text-decoration: none;}
+
+#navpart{ font-family:Verdana, Arial, Helvetica, sans-serif; background-color: #ffffff; 
+margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; width: 100%; border-bottom: 3px solid #999999; }
+
+#navpart_navi_et{ font-size:12px; color:#FFFFFF; background-color: #999999; width: 100%; 
+    padding: 0px 0px 0px 0px; margin: 1px 0px 1px 0px; 
+    background-image:url(../Images/et_logotxt.jpg); 
+    background-position:right; height: 20px;
+    background-repeat:no-repeat;
+	}
+    #navpart_navi_et div{ 
+    font-size:12px; 
+    margin: 0px 0px 0px 165px;
+    padding: 0px 0px 0px 0px;
+    border-left: 1px solid #FFFFFF;}
+    #navpart_navi_et div a{ 
+    display:inline; 
+    line-height: 19px; 
+    color:#FFFFFF; 
+    border-right: 1px solid #FFFFFF; 
+    text-decoration: none; 
+    padding: 3px 5px 3px 5px; }
+    #navpart_navi_et div a:hover{ 
+    background-image:url(../Images/top_nav_but_over.jpg); 
+    background-repeat:repeat-x; 
+    text-decoration: none; }
+    
+    #navpart_navi{ 
+    font-size:12px; 
+    color:#FFFFFF; 
+    background-color: #999999; 
+    width: 100%; 
+    padding: 0px 0px 0px 0px; 
+    margin: 1px 0px 1px 0px; 
+    background-image:url(../Images/bbs_cockpit_marker.gif); 
+    background-position:right; 
+    height: 20px;
+    background-repeat:no-repeat;
+    }
+    #navpart_navi div{ 
+    font-size:12px; 
+    margin: 0px 0px 0px 165px; 
+    padding: 0px 0px 0px 0px;
+    border-left: 1px solid #FFFFFF;
+    }
+    #navpart_navi div a{ 
+    display:inline; 
+    line-height: 20px; 
+    color:#FFFFFF; 
+    border-right: 1px solid #FFFFFF; 
+    text-decoration: none; 
+    padding: 3px 5px 3px 5px; 
+    }
+    #navpart_navi div a:hover{ 
+    background-image:url(../Images/top_nav_but_over.jpg); 
+    background-repeat:repeat-x; 
+    text-decoration: none; 
+    }
+    
+#navpart_navi a{ color:#FFFFFF; text-decoration: none; line-height: 20px;  }
+#navpart_navi a:hover{ background-image:url(../Images/top_nav_but_over.jpg); 
+    background-repeat:repeat-x; text-decoration: none; }
+    
+#navpart_subnavi{ background-color: #5b86a4; height: 18px; width: 100%; 
+    border-bottom: 1px solid #676e76; }
+#navpart_subnavi div { color:#FFFFFF; font-size:10px; 
+    padding: 4px 0px 4px 5px; margin: 0px 0px 0px 10px; }
+
+#corpus{ font-family:Verdana, Arial, Helvetica, sans-serif; background-color: #FFFFFF; 
+    background-image:url(../Images/farbverlauf_centerbg.jpg); 
+    background-repeat:repeat-x; 
+    width: 100%; height: 100%;
+    /*border-right: 1px solid #ffffff;*/
+    padding: 10px 0px 0px 0px;}
+
+#corpus_desc{ background-color: #ffffff; margin: 0px 10px 10px 10px; padding: 5px 5px 15px 5px;
+    height: 100%;}
+    
+#corpus_center{ background-color: #ffffff; margin: 0px 10px 0px 10px; padding: 5px 5px 35px 5px; 
+    height: 100%;}
+
+
+#corpus_desc h1, #corpus_center h1{ color:#333333; font-size:18px; padding: 0px 0px 15px 0px;  
+    margin: 0px 0px 0px 0px; }
+#corpus_desc h2, #corpus_center h2{ color:#333333; font-size:12px; font-weight:bold; 
+    padding: 0px 0px 5px 0px;  margin: 0px 0px 0px 0px; }
+#corpus_desc p, #corpus_center p{ color:#333333; font-size:12px; padding: 0px 0px 5px 0px;  
+    margin: 0px 0px 0px 0px; }
+#corpus_desc a, #corpus_center a{ color:#333333; font-size:12px; }
+
+
+#corpus_center table{border: solid 0px #FFFFFF; }
+#corpus_center table tr{border: solid 0px #FFFFFF;}
+#corpus_center table tr td{border: solid 0px #FFFFFF;}
+
+#corpus_desc table{border: solid 0px #FFFFFF; }
+#corpus_desc table tr{border: solid 0px #FFFFFF;}
+#corpus_desc table tr td{border: solid 0px #FFFFFF;}
+
+#mnuWizzard{
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size: 8pt;
+padding: 0px 0px 5px 0px;
+}
+.corpus_info_label{
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size: 8pt;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+
+
+/*********************** 4 Dynamic Form ************************************/
+
+.mc-dfrm-LB {
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+color:#333333;
+border: 1px #666666 solid;
+margin: 25px 15px 0px 15px;
+}
+.mc-dfrm-Label {
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+color:#333333;
+margin: 5px 5px 5px 15px;
+}
+.mc-dfrm-TB {
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+color:#333333;
+border: 1px #666666 solid;
+margin: 10px 15px 10px 15px;
+}
+.mc-dfrm-CL{
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+padding: 10px 15px 10px 5px;
+float:left;
+}
+table .mc-dfrm-Clndr {
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+color:#333333;
+}
+table .mc-dfrm-Clndr td {
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+color:#333333;
+padding: 2px 2px 2px 2px;
+}
+
+
+.mc-dfrm-EditTextsView {
+font-family:Verdana, Sans-Serif;
+}
+h2 .mc-dfrm-EditTextsView {
+font-family:Verdana, Sans-Serif;
+padding: 5px 0px 10px 0px;
+}
+p .mc-dfrm-EditTextsView {
+font-size:12pt; 
+font-weight:normal; 
+color:#333333; 
+padding: 5px 0px 5px 0px;
+}
+
+.mc-dfrm-EditTextsView-tblcell {
+font-size:12pt; 
+font-weight:normal; 
+color:#333333; 
+}
+.mc-dfrm-EditTextsView-tblcellLeft {
+background-color: #e9ecf1;
+width: 50px;
+}
+.mc-dfrm-EditTextsView-tblcellCenter{
+background-color: #e9ecf1;
+width: 200px;
+}
+/*
+' Reference : CR ZHHR 1038241 - GBOX COC: New concept for multiple text functionality
+' Comment   : New concept for multiple text functionality
+' Added by  : Pratyusa Lenka (CWID : EOJCG) 
+' Date      : 2015-03-24
+*/
+.mc-dfrm-EditTextsView-tblcellRight {
+background-color: #999999;
+width: 150px;
+}
+.mc-dfrm-EditTextsView-Label {
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+color:#333333;
+margin: 5px 5px 5px 5px;
+}
+.mc-dfrm-EditTextsView-TB {
+font-size:12px;
+font-family:Verdana, Sans-Serif;
+color:#333333;
+border: 1px #666666 solid;
+margin: 5px 5px 5px 5px;
+padding: 3px 3px 3px 3px;
+}
+/*
+' Reference : CR ZHHR 1038241 - GBOX COC: New concept for multiple text functionality
+' Comment   : New concept for multiple text functionality
+' Added by  : Pratyusa Lenka (CWID : EOJCG) 
+' Date      : 2015-03-24
+*/
+.mc-dfrm-EditTextsView-tblcell input {
+width: 124px;
+}
+.mc-dfrm-EditTextsView-tblcell-CB {
+background-color: #e9ecf1;
+width: 400px;
+}
+.mc-dfrm-EditTextsView-tblcell-CB table td {
+	padding: 5px 5px 5px 5px;
+}
+
+/*********************** 4 Effort Tracking *********************************/
+
+/* f d MultiView */
+
+.et_multiview {
+background-color: #FFFFFF;
+}
+.et_multiview_navi {
+font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color:#FFFFFF; font-weight: bold;
+padding: 5px 5px 5px 5px; 
+width: 100%; 
+vertical-align: top;
+}
+.et_multiview_navi a{
+padding: 5px 5px 5px 5px;
+color: #FFFFFF; 
+text-decoration: none;
+}
+.et_multiview_navi a:active, .et_multiview_navi a:hover{
+padding: 5px 5px 5px 5px; 
+color: #FFFFFF; 
+text-decoration: underline;
+}
+.et_multiview_naviImgBut {
+padding: 0px 10px 0px 10px
+}
+
+/* f d View */
+
+.et_view_overBereich {
+font-family:Verdana, Sans-Serif;
+color:#222222;
+padding: 10px 15px 10px 15px;
+}
+
+.et_view_naviOverBut {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px; 
+color:#222222;
+padding: 10px 15px 0px 15px;
+}
+.et_view_naviOverBut a {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px; 
+color:#222222;
+padding: 5px 5px 0px 5px;
+margin: 0px 10px 0px 0px; 
+text-decoration: none;
+background-color: #EEEEEE;
+border-top: solid 1px #666666;
+border-right: solid 1px #666666;
+border-bottom: solid 1px #666666;
+border-left: solid 1px #666666;
+}
+.et_view_naviOverBut a:hover {
+font-family:Verdana, Sans-Serif;
+font-size: 12px; 
+color:#222222;
+padding: 5px 5px 0px 5px; 
+text-decoration: none;
+background-color: #FFFFFF;
+border-top: solid 1px #666666;
+border-right: solid 1px #666666;
+border-bottom: solid 1px #FFFFFF;
+border-left: solid 1px #666666;
+}     
+.et_view_naviOverBut .cssOVTicket, .et_view_naviOverBut .cssOVForeign, 
+.et_view_naviOverBut .cssOVEffort, .et_view_naviOverBut .cssOVReview {
+font-family:Verdana, Sans-Serif;
+font-size: 12px;
+color:#222222;
+padding: 5px 5px 0px 5px;  
+text-decoration: none;
+background-color: #FFFFFF;
+border-top: solid 1px #666666;
+border-right: solid 1px #666666;
+border-bottom: solid 1px #FFFFFF;
+border-left: solid 1px #666666;
+}
+.et_view_naviOverBut .cssOVTicket_out, .et_view_naviOverBut .cssOVForeign_out,
+.et_view_naviOverBut .cssOVEffort_out, .et_view_naviOverBut .cssOVReview_out {
+font-family:Verdana, Sans-Serif;
+font-size: 12px; 
+color:#222222;
+padding: 5px 5px 0px 5px; 
+text-decoration: none;
+background-color: #EEEEEE;
+border-top: solid 1px #666666;
+border-right: solid 1px #666666;
+border-bottom: none;
+border-left: solid 1px #666666;
+}
+
+.et_view_OverViewing{
+font-family:Verdana, Sans-Serif;
+font-size: 12px; 
+color:#222222;
+padding: 10px 5px 5px 5px;
+border-top: solid 1px #666666;
+border-right: solid 1px #FFFFFF;
+border-bottom: solid 1px #FFFFFF;
+border-left: solid 1px #FFFFFF;
+}
+
+/* f d GridView */
+
+.et_gridview {
+font-family:Verdana, Sans-Serif;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+position: static;
+}
+.et_gridview_table {
+font-family:Verdana, Sans-Serif; 
+text-align:left;
+}
+.et_gridview_table tr td {
+font-family:Verdana, Sans-Serif; 
+font-size: 11px;
+vertical-align:top;
+padding: 5px 5px 5px 5px; 
+}
+.et_gridview_itemTemp, .et_gridview_editTemp{
+font-family:Verdana, Sans-Serif; 
+font-size: 11px;
+width: 150px;
+}
+.et_gridview_itemTemp, .et_gridview_itemTemp a {
+color: #222222;
+text-decoration: none;
+}
+.et_gridview_editTemp, .et_gridview_editTemp a{
+color: #222222;
+text-decoration: none;
+}
+
+/* Review */
+
+.et_gridview_Review, .et_floatview_Review{
+font-family:Verdana, Sans-Serif; 
+font-size: 11px;
+padding: 5px 5px 5px 5px;
+width: 100%;
+}
+
+.et_floatview_Review{
+float:left;
+}
+.et_gridview_Review h2, .et_floatview_Review h2 {
+font-family:Verdana, Sans-Serif; 
+font-size: 11px;
+font-weight:bold;
+}
+.et_gridview_Review p, .et_floatview_Review p {
+font-family:Verdana, Sans-Serif; 
+font-size: 11px;
+padding: 1px 1px 5px 1px;
+margin: 0px 0px 0px 0px;
+}
+/* f d FormView */
+
+.et_formview {
+font-family:Verdana, Sans-Serif;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+height: 100%;
+}
+.et_formview_table {
+font-family:Verdana, Sans-Serif; 
+text-align:left;
+width: 100%;
+}
+.et_formview_table tr td {
+font-family:Verdana, Sans-Serif; 
+font-size: 11px;
+vertical-align:top;
+padding: 5px 5px 5px 5px; 
+}
+
+.et_formview_txtbox{
+font-family:Verdana, Sans-Serif; 
+font-size: 11px;
+color: #222222;
+}
+.et_formview_insertbut{
+font-family:Verdana, Sans-Serif;
+font-size: 11px; 
+color:#222222;
+padding: 5px 5px 5px 5px; 
+}
+.et_formview_insertbut a{
+color: #222222;
+}
+.et_lblInformationen {
+font-family:Courier New, Courier, Arial;
+font-size: 10pt;
+padding: 5px 0px 5px 0px;
+}
+
+.lblRequestFor 
+{
+    margin-bottom: 4px;
+}
+.file-upload
+{
+    margin-bottom: 4px;
+}
+.lblAttachFile 
+{
+    padding-right: 50px;
+    margin-bottom: 4px;
+}
+.fuAttachment
+{
+    width: 273px;
+}
+.compHolder
+{
+    margin : 5px 0px 5px 134px;
+}
+
+/*********************** ZHHR 1059522 - GBOX COC: OTT 2278 - Cascaded Lookup Functionality *********************************/
+.overlay 
+    {
+        position: absolute;
+        background-color: white;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        -moz-opacity: 0.8;
+        filter: alpha(opacity=80);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        z-index: 10000;
+    }
+.center
+    {
+        z-index: 1000;
+        margin: 300px auto;
+        padding: 10px;
+        width: 130px;
+        background-color: White;
+        border-radius: 10px;
+        filter: alpha(opacity=100);
+        opacity: 1;
+        -moz-opacity: 1;
+    }

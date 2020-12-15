@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GBoxForms.myGBoxManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgoJAQAICwAqChYJgAEgEEAFURRAgAIYMJIdDFCEBFA=</HashCode>
+      <FileName>Classes\myGBoxManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.myFileManager" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAYACIAAAAABAAAAAAABAAAAARABAAAAA=</HashCode>
+      <FileName>Classes\myFileManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.TagcloudIndexController" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAAAABAAAAABAAAAAAAAAAAAAAAAAAAAAAABAAQAA=</HashCode>
+      <FileName>Classes\TagcloudIndexController.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.mySQLDBMANAGER" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFYBAMBJGAAAAQMAACVIDKAiAAAOoCAgNVQIAECIUAA=</HashCode>
+      <FileName>Classes\mySQLDBMANAGER.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.myGumsManager" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAQAA=</HashCode>
+      <FileName>Classes\mySQLDBMANAGER.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.SearchResult" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Classes\mySearchEngine.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GBoxForms.mySearchEngine" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIFAAQJAgAAAAAAAAAIAIAQAAAQgJAgAAAgAAAgAgA=</HashCode>
+      <FileName>Classes\mySearchEngine.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
